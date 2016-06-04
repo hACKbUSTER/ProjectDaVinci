@@ -4,7 +4,7 @@ $(document).ready(function () {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
-            autoplay:400,
+            autoplay:2000,
             // If we need pagination
             pagination: '.swiper-pagination',
             autoplayDisableOnInteraction:false,

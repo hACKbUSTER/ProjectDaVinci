@@ -113,6 +113,7 @@
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     //    [self.progressView setProgress:1 animated:NO];
+    //[self.webView stringByEvaluatingJavaScriptFromString:@"toggleTabbar(true)"];
     
 }
 
