@@ -59,6 +59,6 @@ function setSongName(name) {
 }
 
 function setCoverImage(url) {
-	$('.page-content').css('backgroundImage', url)
+	$('#bg-img').attr('src', url)
 	$('#cover-img').attr('src', url)
 }
