@@ -12,12 +12,12 @@
 #import "DVLoadingView.h"
 #import <JavaScriptCore/JavaScriptCore.h>  
 
-@interface DVViewController () <WKUIDelegate,WKNavigationDelegate>
+@interface DVViewController () <WKUIDelegate,WKNavigationDelegate,UIWebViewDelegate>
 {
     BOOL isShowingCustomView;
 }
 
-@property (strong, nonatomic) WKWebView *webView;
+@property (strong, nonatomic) UIWebView *webView;
 @property (strong, nonatomic) UIView *customView;
 @property (strong, nonatomic) UILabel *customViewLabel;
 @property (strong, nonatomic) DVLoadingView *loadingView;
@@ -39,9 +39,9 @@
     
     isShowingCustomView = NO;
     
-    self.webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
-    self.webView.UIDelegate = self;
-    self.webView.navigationDelegate = self;
+    self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    self.webView.delegate = self;
+//    self.webView.navigationDelegate = self;
     self.webView.scrollView.scrollEnabled = NO;
     
     [self.view addSubview:self.webView];
@@ -53,8 +53,8 @@
     
     NSURL *url = [NSURL fileURLWithPath:filePath];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-    //[self.webView loadRequest:request];
-    [self.webView loadFileURL:url allowingReadAccessToURL:[NSURL fileURLWithPath:documentpath]];
+    [self.webView loadRequest:request];
+//    [self.webView loadFileURL:url allowingReadAccessToURL:[NSURL fileURLWithPath:documentpath]];
     
     self.customViewLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 25.0f, ScreenWidth, 20.0f)];
     _customViewLabel.font = [UIFont systemFontOfSize:13.0f];
@@ -72,54 +72,54 @@
     // Dispose of any resources that can be recreated.
 }
 #pragma WKWebView Navi Delegate
-- (void)webView:(WKWebView *)webView
-didFinishNavigation:(WKNavigation *)navigation
-{
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    [_webView evaluateJavaScript:@"toggleTabbar(true)"
-               completionHandler:^(id object, NSError *error) {
-                   if (error)
-                   {
-                       NSLog(@"ERROR: %@",[error debugDescription]);
-                   }}];
-}
-- (void)webView:(WKWebView *)webView
-didStartProvisionalNavigation:(WKNavigation *)navigation
-{
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-}
-- (void)webView:(WKWebView *)webView
-didFailNavigation:(WKNavigation *)navigation
-      withError:(NSError *)error
-{
-    if (error)
-    {
-        NSLog(@"ERROR: %@",[error debugDescription]);
-    }
-}
-
-//#pragma mark - webView delegate
-//- (void)webViewDidStartLoad:(UIWebView *)webView {
+//- (void)webView:(WKWebView *)webView
+//didFinishNavigation:(WKNavigation *)navigation
+//{
+//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+//    [_webView evaluateJavaScript:@"toggleTabbar(true)"
+//               completionHandler:^(id object, NSError *error) {
+//                   if (error)
+//                   {
+//                       NSLog(@"ERROR: %@",[error debugDescription]);
+//                   }}];
+//}
+//- (void)webView:(WKWebView *)webView
+//didStartProvisionalNavigation:(WKNavigation *)navigation
+//{
 //    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 //}
-//
-//-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
-//    //    NSLog(@"navigation type %d",navigationType);
-//    return YES;
+//- (void)webView:(WKWebView *)webView
+//didFailNavigation:(WKNavigation *)navigation
+//      withError:(NSError *)error
+//{
+//    if (error)
+//    {
+//        NSLog(@"ERROR: %@",[error debugDescription]);
+//    }
 //}
-//
-//- (void)webViewDidFinishLoad:(UIWebView *)webView {
-////    [self showCustomViewAnimated:YES withTitle:@"Are you fucking kidding me?"];
-//    
-//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-//    //    [self.progressView setProgress:1 animated:NO];
-//    
-//}
-//
-//- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-//    NSLog(@"didFailLoadWithError? :%@",error.debugDescription);
-//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-//}
+
+#pragma mark - webView delegate
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+}
+
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+    //    NSLog(@"navigation type %d",navigationType);
+    return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+//    [self showCustomViewAnimated:YES withTitle:@"Are you fucking kidding me?"];
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    //    [self.progressView setProgress:1 animated:NO];
+    
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    NSLog(@"didFailLoadWithError? :%@",error.debugDescription);
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+}
 
 - (void)reloadWebView
 {
