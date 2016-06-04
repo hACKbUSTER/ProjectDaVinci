@@ -192,16 +192,33 @@
 - (void)showLoadingView
 {
     [_inputManager beginRecording:nil];
-	_customViewLabel.hidden = TRUE;
-	_loadingView = [[DVLoadingView alloc] initWithMaxHeight:15 minHeight:8 width:4 minAlpha:0.2 spacing:5 color:[UIColor whiteColor]];
-	[_loadingView setCenter:CGPointMake(_customView.center.x, _customView.center.y + 8)];
-	[_customView addSubview:_loadingView];
+    
+    _loadingView = [[DVLoadingView alloc] initWithMaxHeight:15 minHeight:8 width:4 minAlpha:0.2 spacing:5 color:[UIColor whiteColor]];
+    [_loadingView setCenter:CGPointMake(_customView.center.x, _customView.center.y + 8)];
+    [_customView addSubview:_loadingView];
+    _loadingView.alpha = 0.0f;
+    
+    [_customViewLabel.layer removeAllAnimations];
+    
+    [UIView animateWithDuration:0.3f animations:^{
+        _customViewLabel.alpha = 0.0f;
+        _loadingView.alpha = 1.0f;
+    } completion:^(BOOL finished) {
+        _customViewLabel.hidden = YES;
+    }];
 }
 
 - (void)hideLoadingView
 {
-	[_loadingView removeFromSuperview];
-	_customViewLabel.hidden = FALSE;
+    _customViewLabel.hidden = NO;
+
+    [UIView animateWithDuration:0.3f animations:^{
+        _customViewLabel.alpha = 1.0f;
+        _loadingView.alpha = 0.0f;
+    } completion:^(BOOL finished) {
+        [self blinkAnimationForTitleLabel];
+        [_loadingView removeFromSuperview];
+    }];
 }
 
 - (void)customViewTapped:(UITapGestureRecognizer *)gesture
