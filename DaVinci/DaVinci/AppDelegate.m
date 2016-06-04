@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "ZipArchive.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) NSUserDefaults *userDefault;
 
 @end
 
@@ -16,7 +19,33 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"t"]) {
+    
+        // Override point for customization after application launch.
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"resource" ofType:@"zip"];
+        NSLog(@"file path:%@",filePath);
+        
+        ZipArchive* zip = [[ZipArchive alloc] init];
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentpath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+        
+        NSString* unzipto = [documentpath stringByAppendingString:@"/"] ;
+        
+        if( [zip UnzipOpenFile:filePath] )
+        {
+            BOOL ret = [zip UnzipFileTo:unzipto overWrite:YES];
+            NSLog(@"fuck!");
+            if( NO==ret )
+            {
+                NSLog(@"fuck?");
+            }
+            [zip UnzipCloseFile];
+        }
+        
+        [[NSUserDefaults standardUserDefaults] setValue:@(1) forKey:@"t"];
+    }
     return YES;
 }
 

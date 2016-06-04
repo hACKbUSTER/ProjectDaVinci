@@ -16,6 +16,14 @@
 		5062B4241D02C9C6000F39FB /* DaVinciUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4231D02C9C6000F39FB /* DaVinciUITests.m */; };
 		5062B4351D02D183000F39FB /* DVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4341D02D183000F39FB /* DVViewController.m */; };
 		5062B4391D02D1D9000F39FB /* DVAIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4381D02D1D9000F39FB /* DVAIManager.m */; };
+		5062B49B1D02DB0A000F39FB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4911D02DB0A000F39FB /* ioapi.c */; };
+		5062B49C1D02DB0A000F39FB /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4931D02DB0A000F39FB /* mztools.c */; };
+		5062B49D1D02DB0A000F39FB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4951D02DB0A000F39FB /* unzip.c */; };
+		5062B49E1D02DB0A000F39FB /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4971D02DB0A000F39FB /* zip.c */; };
+		5062B49F1D02DB0A000F39FB /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5062B49A1D02DB0A000F39FB /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5062B4A11D02DB53000F39FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4A01D02DB53000F39FB /* libz.tbd */; };
+		5062B4A41D02DC5A000F39FB /* resource.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5062B4A31D02DC5A000F39FB /* resource.zip */; };
+		5062B4A71D02DEF0000F39FB /* UIView+ViewFrameGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4A61D02DEF0000F39FB /* UIView+ViewFrameGeometry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,21 @@
 		5062B4341D02D183000F39FB /* DVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVViewController.m; sourceTree = "<group>"; };
 		5062B4371D02D1D9000F39FB /* DVAIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVAIManager.h; sourceTree = "<group>"; };
 		5062B4381D02D1D9000F39FB /* DVAIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVAIManager.m; sourceTree = "<group>"; };
+		5062B4901D02DB0A000F39FB /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		5062B4911D02DB0A000F39FB /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		5062B4921D02DB0A000F39FB /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		5062B4931D02DB0A000F39FB /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		5062B4941D02DB0A000F39FB /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		5062B4951D02DB0A000F39FB /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		5062B4961D02DB0A000F39FB /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		5062B4971D02DB0A000F39FB /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		5062B4981D02DB0A000F39FB /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		5062B4991D02DB0A000F39FB /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		5062B49A1D02DB0A000F39FB /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		5062B4A01D02DB53000F39FB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5062B4A31D02DC5A000F39FB /* resource.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = resource.zip; sourceTree = "<group>"; };
+		5062B4A51D02DEF0000F39FB /* UIView+ViewFrameGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewFrameGeometry.h"; sourceTree = "<group>"; };
+		5062B4A61D02DEF0000F39FB /* UIView+ViewFrameGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewFrameGeometry.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5062B4A11D02DB53000F39FB /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +108,7 @@
 		5062B3F21D02C9C6000F39FB = {
 			isa = PBXGroup;
 			children = (
+				5062B4A21D02DB58000F39FB /* Frameworks */,
 				5062B3FD1D02C9C6000F39FB /* DaVinci */,
 				5062B4171D02C9C6000F39FB /* DaVinciTests */,
 				5062B4221D02C9C6000F39FB /* DaVinciUITests */,
@@ -104,6 +129,7 @@
 		5062B3FD1D02C9C6000F39FB /* DaVinci */ = {
 			isa = PBXGroup;
 			children = (
+				5062B48E1D02DB04000F39FB /* Utils */,
 				5062B4361D02D1AC000F39FB /* Service */,
 				5062B4321D02D15B000F39FB /* Views */,
 				5062B4311D02D153000F39FB /* Controllers */,
@@ -115,6 +141,7 @@
 		5062B3FE1D02C9C6000F39FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5062B4A31D02DC5A000F39FB /* resource.zip */,
 				5062B4011D02C9C6000F39FB /* AppDelegate.h */,
 				5062B4021D02C9C6000F39FB /* AppDelegate.m */,
 				5062B4071D02C9C6000F39FB /* Main.storyboard */,
@@ -167,6 +194,42 @@
 				5062B4381D02D1D9000F39FB /* DVAIManager.m */,
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		5062B48E1D02DB04000F39FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5062B4A51D02DEF0000F39FB /* UIView+ViewFrameGeometry.h */,
+				5062B4A61D02DEF0000F39FB /* UIView+ViewFrameGeometry.m */,
+				5062B48F1D02DB0A000F39FB /* minizip */,
+				5062B4991D02DB0A000F39FB /* ZipArchive.h */,
+				5062B49A1D02DB0A000F39FB /* ZipArchive.mm */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		5062B48F1D02DB0A000F39FB /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				5062B4901D02DB0A000F39FB /* crypt.h */,
+				5062B4911D02DB0A000F39FB /* ioapi.c */,
+				5062B4921D02DB0A000F39FB /* ioapi.h */,
+				5062B4931D02DB0A000F39FB /* mztools.c */,
+				5062B4941D02DB0A000F39FB /* mztools.h */,
+				5062B4951D02DB0A000F39FB /* unzip.c */,
+				5062B4961D02DB0A000F39FB /* unzip.h */,
+				5062B4971D02DB0A000F39FB /* zip.c */,
+				5062B4981D02DB0A000F39FB /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		5062B4A21D02DB58000F39FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5062B4A01D02DB53000F39FB /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5062B40E1D02C9C6000F39FB /* LaunchScreen.storyboard in Resources */,
+				5062B4A41D02DC5A000F39FB /* resource.zip in Resources */,
 				5062B40B1D02C9C6000F39FB /* Assets.xcassets in Resources */,
 				5062B4091D02C9C6000F39FB /* Main.storyboard in Resources */,
 			);
@@ -300,9 +364,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5062B4031D02C9C6000F39FB /* AppDelegate.m in Sources */,
+				5062B49E1D02DB0A000F39FB /* zip.c in Sources */,
+				5062B49D1D02DB0A000F39FB /* unzip.c in Sources */,
 				5062B4351D02D183000F39FB /* DVViewController.m in Sources */,
+				5062B49C1D02DB0A000F39FB /* mztools.c in Sources */,
 				5062B4001D02C9C6000F39FB /* main.m in Sources */,
 				5062B4391D02D1D9000F39FB /* DVAIManager.m in Sources */,
+				5062B49F1D02DB0A000F39FB /* ZipArchive.mm in Sources */,
+				5062B49B1D02DB0A000F39FB /* ioapi.c in Sources */,
+				5062B4A71D02DEF0000F39FB /* UIView+ViewFrameGeometry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
