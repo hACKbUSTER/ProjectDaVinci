@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Required meta tags-->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <!-- Your app title -->
-  <title>云音乐</title>
-  <!-- Path to Framework7 iOS CSS theme styles-->
-  <link rel="stylesheet" href="css/framework7.ios.css">
-  <!-- Path to Framework7 iOS related color styles -->
-  <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
-  <!-- Path to your custom app styles-->
-  <link rel="stylesheet" href="css/my-app.css">
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Your app title -->
+    <title>云音乐</title>
+    <!-- Path to Framework7 iOS CSS theme styles-->
+    <link rel="stylesheet" href="css/framework7.ios.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
     <link rel="stylesheet" href="css/tabbar.icon.css">
     <link rel="stylesheet" href="css/tab1.app.css">
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swiper.jquery.js"></script>
 </head>
 <body>
 <!-- Status bar overlay for full screen mode (PhoneGap) -->
@@ -23,97 +26,46 @@
 <!-- Panels overlay-->
 <div class="panel-overlay"></div>
 <!-- Views -->
-<div class="views">
-  <!-- Your main view, should have "view-main" class -->
-  <div class="view view-main">
-    <!-- Top Navbar-->
-    <div class="navbar" style="background: rgba(255, 255, 255, 1.0);">
-      <div class="navbar-inner">
-        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-        <div class="center sliding" style="width: 80%">
-            <!-- Search Bar -->
-            <form class="searchbar" style="background: rgba(255, 255, 255, 0);">
-                <div class="searchbar-input">
-                    <input type="search" placeholder="搜索音乐、歌词、电台" style="background-color:#ececec;">
-                    <a href="#" class="searchbar-clear"></a>
-                </div>
-                <a href="#" class="searchbar-cancel">Cancel</a>
-            </form>
-
-            <!-- Search Bar overlay-->
-            <div class="searchbar-overlay"></div>
-        </div>
-      </div>
+<div class="views tabs toolbar-through">
+    <div id="view-1" class="view view-main tab active">
+        <script>
+            $(function(){
+                $("#view-1").load("home.html");
+            });
+        </script>
     </div>
-    <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-    <div class="pages navbar-through toolbar-through">
-      <!-- Page, "data-page" contains page name -->
-      <div data-page="index" class="page">
-        <!-- Scrollable page content -->
-        <div class="page-content">
-            <!-- 幻灯片的容器 -->
-            <div class="swiper-container" style="width: 100vw;height:48vw;">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="img/banner/1.jpg" style="width: 100%">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/banner/2.jpg" style="width: 100%">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/banner/3.jpg" style="width: 100%">
-                    </div>
-                </div>
-                <!-- 分页 -->
-                <div class="swiper-pagination"></div>
-                <!-- 滚动条 -->
-                <div class="swiper-scrollbar"></div>
-            </div>
-            <div class="row">
-                <!-- Each "cell" has col-[widht in percents] class -->
-                <div class="col-33">33%</div>
-                <div class="col-33">33%</div>
-                <div class="col-33">33%</div>
-            </div>
-
-        </div>
-      </div>
+    <div id="view-2" class="view tab">
+        <script>
+            $(function(){
+                $("#view-2").load("mymusic.html");
+            });
+        </script>
     </div>
-    <!-- Bottom Toolbar-->
-      <div class="toolbar tabbar tabbar-labels">
-          <div class="toolbar-inner">
-              <a href="#view-1" class="tab-link active">
-                  <i class="icon icon-discovery"></i>
-                  <span class="tabbar-label">发现音乐</span>
-              </a>
-              <a href="#view-2" class="tab-link">
-                  <i class="icon icon-music"></i>
-                  <span class="tabbar-label">我的音乐</span>
-              </a>
-              <a href="#view-3" class="tab-link">
-                  <i class="icon icon-friend"></i>
-                  <span class="tabbar-label">朋友</span>
-              </a>
-              <a href="#view-4" class="tab-link">
-                  <i class="icon icon-account"></i>
-                  <span class="tabbar-label">账号</span>
-              </a>
-          </div>
-      </div>
-  </div>
+    <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner">
+            <a href="#view-1" class="tab-link active">
+                <i class="icon icon-discovery"></i>
+                <span class="tabbar-label">发现音乐</span>
+            </a>
+            <a href="#view-2" class="tab-link">
+                <i class="icon icon-music"></i>
+                <span class="tabbar-label">我的音乐</span>
+            </a>
+            <a href="#view-3" class="tab-link">
+                <i class="icon icon-friend"></i>
+                <span class="tabbar-label">朋友</span>
+            </a>
+            <a href="#view-4" class="tab-link">
+                <i class="icon icon-account"></i>
+                <span class="tabbar-label">账号</span>
+            </a>
+        </div>
+    </div>
 </div>
 <!-- Path to Framework7 Library JS-->
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <!-- Path to your app js-->
 <script type="text/javascript" src="js/my-app.js"></script>
 
-<script src="//code.jquery.com/jquery-latest.min.js"></script>
-
-<link rel="stylesheet" href="css/swiper.css">
-<script src="js/swiper.jquery.js"></script>
-
-<script src="js/tab1.app.js"></script>
 </body>
 </html>

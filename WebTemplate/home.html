@@ -1,0 +1,51 @@
+<div class="navbar" style="background: rgba(255, 255, 255, 1.0);">
+    <div class="navbar-inner">
+        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+        <div class="center sliding" style="width: 80%">
+            <!-- Search Bar -->
+            <form class="searchbar" style="background: rgba(255, 255, 255, 0);">
+                <div class="searchbar-input">
+                    <input type="search" placeholder="搜索音乐、歌词、电台" style="background-color:#ececec;">
+                    <a href="#" class="searchbar-clear"></a>
+                </div>
+                <a href="#" class="searchbar-cancel">Cancel</a>
+            </form>
+
+            <!-- Search Bar overlay-->
+            <div class="searchbar-overlay"></div>
+        </div>
+    </div>
+</div>
+<div class="pages navbar-fixed">
+    <div data-page="home-1" class="page">
+        <div class="page-content">
+            <!-- 幻灯片的容器 -->
+            <div class="swiper-container" style="width: 100vw;height:48vw;">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/banner/1.jpg" style="width: 100%">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner/2.jpg" style="width: 100%">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner/3.jpg" style="width: 100%">
+                    </div>
+                </div>
+                <!-- 分页 -->
+                <div class="swiper-pagination"></div>
+                <!-- 滚动条 -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="row">
+                <!-- Each "cell" has col-[widht in percents] class -->
+                <div class="col-33">33%</div>
+                <div class="col-33">33%</div>
+                <div class="col-33">33%</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/tab1.app.js"></script>
