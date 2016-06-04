@@ -1,0 +1,12 @@
+.icon-micphone
+{
+    width: 24px;
+    height: 24px;
+    background-image:url(../img/cm2_topbar_icn_mic@3x.png);
+}
+.icon-playerview
+{
+    width: 24px;
+    height: 24px;
+    background-image:url(../img/cm2_topbar_icn_playing@3x.png);
+}
