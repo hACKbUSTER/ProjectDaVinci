@@ -38,7 +38,8 @@
         [[IFlySpeechUnderstander sharedInstance] setParameter:@"json" forKey:@"rst"];
         [[IFlySpeechUnderstander sharedInstance] setParameter: @"0" forKey: @"asr_ppt"];
         
-        _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance]; _iFlySpeechSynthesizer.delegate = self;
+        _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance];
+        _iFlySpeechSynthesizer.delegate = self;
         //语速,取值范围 0~100
         
         [_iFlySpeechSynthesizer setParameter:@"60" forKey:[IFlySpeechConstant SPEED]];
@@ -120,6 +121,7 @@
 - (void) onResults:(NSArray *) results isLast:(BOOL)isLast
 {
     if (isLast && [results count] > 0) {
+        
         NSString *jsonStr = ((NSDictionary *)results[0]).allKeys[0];
         
         NSData* jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
