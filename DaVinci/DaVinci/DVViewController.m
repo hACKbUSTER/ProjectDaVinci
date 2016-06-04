@@ -76,7 +76,9 @@
 
 - (void)understandText:(NSNotification *)notif
 {
-    [self hideCustomViewAnimated:YES];
+    [self hideLoadingView];
+    self.customViewLabel.text = @"你个贱人";
+    [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -154,7 +156,7 @@
         self.webView.height = self.view.height - 50.0f;
     } completion:^(BOOL finished) {
         [self blinkAnimationForTitleLabel];
-//        [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
+        [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人,你个贱人,你个贱人,你个贱人"];
 		
 		// [self showLoadingView];
     }];

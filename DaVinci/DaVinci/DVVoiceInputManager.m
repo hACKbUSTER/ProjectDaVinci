@@ -92,7 +92,7 @@
 
 - (void) onCompleted:(IFlySpeechError *) error
 {
-    if (error == nil) {
+    if (error.errorCode == 0) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_speaker_completed" object:nil];
     }
 }
