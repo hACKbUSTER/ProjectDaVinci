@@ -1,6 +1,7 @@
 var disk_width = 0.8 * $(window).width()
 setDiskWidth(disk_width)
 
+var $coverImg = $('#cover-img')
 var angle = 0;
   setInterval(function(){
     angle+=3;
