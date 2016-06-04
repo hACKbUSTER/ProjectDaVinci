@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5062B4001D02C9C6000F39FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B3FF1D02C9C6000F39FB /* main.m */; };
+		5062B4031D02C9C6000F39FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4021D02C9C6000F39FB /* AppDelegate.m */; };
+		5062B4061D02C9C6000F39FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4051D02C9C6000F39FB /* ViewController.m */; };
+		5062B4091D02C9C6000F39FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062B4071D02C9C6000F39FB /* Main.storyboard */; };
+		5062B40B1D02C9C6000F39FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5062B40A1D02C9C6000F39FB /* Assets.xcassets */; };
+		5062B40E1D02C9C6000F39FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062B40C1D02C9C6000F39FB /* LaunchScreen.storyboard */; };
+		5062B4191D02C9C6000F39FB /* DaVinciTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4181D02C9C6000F39FB /* DaVinciTests.m */; };
+		5062B4241D02C9C6000F39FB /* DaVinciUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4231D02C9C6000F39FB /* DaVinciUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5062B4151D02C9C6000F39FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5062B3F31D02C9C6000F39FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5062B3FA1D02C9C6000F39FB;
+			remoteInfo = DaVinci;
+		};
+		5062B4201D02C9C6000F39FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5062B3F31D02C9C6000F39FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5062B3FA1D02C9C6000F39FB;
+			remoteInfo = DaVinci;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5062B3FB1D02C9C6000F39FB /* DaVinci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaVinci.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5062B3FF1D02C9C6000F39FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5062B4011D02C9C6000F39FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5062B4021D02C9C6000F39FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5062B4041D02C9C6000F39FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5062B4051D02C9C6000F39FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5062B4081D02C9C6000F39FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5062B40A1D02C9C6000F39FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5062B40D1D02C9C6000F39FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5062B40F1D02C9C6000F39FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5062B4141D02C9C6000F39FB /* DaVinciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaVinciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5062B4181D02C9C6000F39FB /* DaVinciTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaVinciTests.m; sourceTree = "<group>"; };
+		5062B41A1D02C9C6000F39FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5062B41F1D02C9C6000F39FB /* DaVinciUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaVinciUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5062B4231D02C9C6000F39FB /* DaVinciUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaVinciUITests.m; sourceTree = "<group>"; };
+		5062B4251D02C9C6000F39FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5062B3F81D02C9C6000F39FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5062B4111D02C9C6000F39FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5062B41C1D02C9C6000F39FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5062B3F21D02C9C6000F39FB = {
+			isa = PBXGroup;
+			children = (
+				5062B3FD1D02C9C6000F39FB /* DaVinci */,
+				5062B4171D02C9C6000F39FB /* DaVinciTests */,
+				5062B4221D02C9C6000F39FB /* DaVinciUITests */,
+				5062B3FC1D02C9C6000F39FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5062B3FC1D02C9C6000F39FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5062B3FB1D02C9C6000F39FB /* DaVinci.app */,
+				5062B4141D02C9C6000F39FB /* DaVinciTests.xctest */,
+				5062B41F1D02C9C6000F39FB /* DaVinciUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5062B3FD1D02C9C6000F39FB /* DaVinci */ = {
+			isa = PBXGroup;
+			children = (
+				5062B4011D02C9C6000F39FB /* AppDelegate.h */,
+				5062B4021D02C9C6000F39FB /* AppDelegate.m */,
+				5062B4041D02C9C6000F39FB /* ViewController.h */,
+				5062B4051D02C9C6000F39FB /* ViewController.m */,
+				5062B4071D02C9C6000F39FB /* Main.storyboard */,
+				5062B40A1D02C9C6000F39FB /* Assets.xcassets */,
+				5062B40C1D02C9C6000F39FB /* LaunchScreen.storyboard */,
+				5062B40F1D02C9C6000F39FB /* Info.plist */,
+				5062B3FE1D02C9C6000F39FB /* Supporting Files */,
+			);
+			path = DaVinci;
+			sourceTree = "<group>";
+		};
+		5062B3FE1D02C9C6000F39FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5062B3FF1D02C9C6000F39FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5062B4171D02C9C6000F39FB /* DaVinciTests */ = {
+			isa = PBXGroup;
+			children = (
+				5062B4181D02C9C6000F39FB /* DaVinciTests.m */,
+				5062B41A1D02C9C6000F39FB /* Info.plist */,
+			);
+			path = DaVinciTests;
+			sourceTree = "<group>";
+		};
+		5062B4221D02C9C6000F39FB /* DaVinciUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5062B4231D02C9C6000F39FB /* DaVinciUITests.m */,
+				5062B4251D02C9C6000F39FB /* Info.plist */,
+			);
+			path = DaVinciUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5062B3FA1D02C9C6000F39FB /* DaVinci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5062B4281D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinci" */;
+			buildPhases = (
+				5062B3F71D02C9C6000F39FB /* Sources */,
+				5062B3F81D02C9C6000F39FB /* Frameworks */,
+				5062B3F91D02C9C6000F39FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaVinci;
+			productName = DaVinci;
+			productReference = 5062B3FB1D02C9C6000F39FB /* DaVinci.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5062B4131D02C9C6000F39FB /* DaVinciTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5062B42B1D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinciTests" */;
+			buildPhases = (
+				5062B4101D02C9C6000F39FB /* Sources */,
+				5062B4111D02C9C6000F39FB /* Frameworks */,
+				5062B4121D02C9C6000F39FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5062B4161D02C9C6000F39FB /* PBXTargetDependency */,
+			);
+			name = DaVinciTests;
+			productName = DaVinciTests;
+			productReference = 5062B4141D02C9C6000F39FB /* DaVinciTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5062B41E1D02C9C6000F39FB /* DaVinciUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5062B42E1D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinciUITests" */;
+			buildPhases = (
+				5062B41B1D02C9C6000F39FB /* Sources */,
+				5062B41C1D02C9C6000F39FB /* Frameworks */,
+				5062B41D1D02C9C6000F39FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5062B4211D02C9C6000F39FB /* PBXTargetDependency */,
+			);
+			name = DaVinciUITests;
+			productName = DaVinciUITests;
+			productReference = 5062B41F1D02C9C6000F39FB /* DaVinciUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5062B3F31D02C9C6000F39FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = hackbuster;
+				TargetAttributes = {
+					5062B3FA1D02C9C6000F39FB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					5062B4131D02C9C6000F39FB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5062B3FA1D02C9C6000F39FB;
+					};
+					5062B41E1D02C9C6000F39FB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5062B3FA1D02C9C6000F39FB;
+					};
+				};
+			};
+			buildConfigurationList = 5062B3F61D02C9C6000F39FB /* Build configuration list for PBXProject "DaVinci" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5062B3F21D02C9C6000F39FB;
+			productRefGroup = 5062B3FC1D02C9C6000F39FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5062B3FA1D02C9C6000F39FB /* DaVinci */,
+				5062B4131D02C9C6000F39FB /* DaVinciTests */,
+				5062B41E1D02C9C6000F39FB /* DaVinciUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5062B3F91D02C9C6000F39FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5062B40E1D02C9C6000F39FB /* LaunchScreen.storyboard in Resources */,
+				5062B40B1D02C9C6000F39FB /* Assets.xcassets in Resources */,
+				5062B4091D02C9C6000F39FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5062B4121D02C9C6000F39FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5062B41D1D02C9C6000F39FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5062B3F71D02C9C6000F39FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5062B4061D02C9C6000F39FB /* ViewController.m in Sources */,
+				5062B4031D02C9C6000F39FB /* AppDelegate.m in Sources */,
+				5062B4001D02C9C6000F39FB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5062B4101D02C9C6000F39FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5062B4191D02C9C6000F39FB /* DaVinciTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5062B41B1D02C9C6000F39FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5062B4241D02C9C6000F39FB /* DaVinciUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5062B4161D02C9C6000F39FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5062B3FA1D02C9C6000F39FB /* DaVinci */;
+			targetProxy = 5062B4151D02C9C6000F39FB /* PBXContainerItemProxy */;
+		};
+		5062B4211D02C9C6000F39FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5062B3FA1D02C9C6000F39FB /* DaVinci */;
+			targetProxy = 5062B4201D02C9C6000F39FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5062B4071D02C9C6000F39FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5062B4081D02C9C6000F39FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5062B40C1D02C9C6000F39FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5062B40D1D02C9C6000F39FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5062B4261D02C9C6000F39FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5062B4271D02C9C6000F39FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5062B4291D02C9C6000F39FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DaVinci/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5062B42A1D02C9C6000F39FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DaVinci/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5062B42C1D02C9C6000F39FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DaVinciTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaVinci.app/DaVinci";
+			};
+			name = Debug;
+		};
+		5062B42D1D02C9C6000F39FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DaVinciTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaVinci.app/DaVinci";
+			};
+			name = Release;
+		};
+		5062B42F1D02C9C6000F39FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DaVinciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DaVinci;
+			};
+			name = Debug;
+		};
+		5062B4301D02C9C6000F39FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DaVinciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DaVinci;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5062B3F61D02C9C6000F39FB /* Build configuration list for PBXProject "DaVinci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5062B4261D02C9C6000F39FB /* Debug */,
+				5062B4271D02C9C6000F39FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5062B4281D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5062B4291D02C9C6000F39FB /* Debug */,
+				5062B42A1D02C9C6000F39FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5062B42B1D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinciTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5062B42C1D02C9C6000F39FB /* Debug */,
+				5062B42D1D02C9C6000F39FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5062B42E1D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinciUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5062B42F1D02C9C6000F39FB /* Debug */,
+				5062B4301D02C9C6000F39FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5062B3F31D02C9C6000F39FB /* Project object */;
+}
