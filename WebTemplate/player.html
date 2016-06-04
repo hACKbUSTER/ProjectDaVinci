@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/framework7.ios.css">
     <!-- Path to Framework7 iOS related color styles -->
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="canonical" href="http://rangeslider.js.org/">
+
     <style type="text/css">
       .page-content {
         background-image: url(img/bg.jpg);
@@ -90,7 +93,9 @@
               <div id="disk">
                 <img src="img/disk.jpg">
               </div>
-              <input type="range" name="progress-slider" value="0" style="width:90%">
+              <input type="range" min="10" max="1000" step="10" value="300" data-rangeslider="" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
+              <div class="rangeslider rangeslider--horizontal" id="js-rangeslider-0"><div class="rangeslider__fill" style="width: 224.848px;"></div><div class="rangeslider__handle" style="left: 204.848px;"></div></div>
+
             </div>
           </div>
         </div>
@@ -98,6 +103,8 @@
     </div>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.js"></script>
+    <script src="js/rangeslider.js"></script>
+    <script> $(function() { var $document = $(document); var selector = '[data-rangeslider]'; var $inputRange = $(selector); /** * Example functionality to demonstrate a value feedback * and change the output's value. */ function valueOutput(element) { var value = element.value; var output = element.parentNode.getElementsByTagName('output')[0]; output.innerHTML = value; } /** * Initial value output */ for (var i = $inputRange.length - 1; i >= 0; i--) { valueOutput($inputRange[i]); }; /** * Update value output */ $document.on('input', selector, function(e) { valueOutput(e.target); }); /** * Initialize the elements */ $inputRange.rangeslider({ polyfill: false }); /** * Example functionality to demonstrate programmatic value changes */ $document.on('click', '#js-example-change-value button', function(e) { var $inputRange = $('[data-rangeslider]', e.target.parentNode); var value = $('input[type="number"]', e.target.parentNode)[0].value; $inputRange .val(value) .change(); }); /** * Example functionality to demonstrate programmatic attribute changes */ $document.on('click', '#js-example-change-attributes button', function(e) { var $inputRange = $('[data-rangeslider]', e.target.parentNode); var attributes = { min: $('input[name="min"]', e.target.parentNode)[0].value, max: $('input[name="max"]', e.target.parentNode)[0].value, step: $('input[name="step"]', e.target.parentNode)[0].value }; $inputRange .attr(attributes) .rangeslider('update', true); }); /** * Example functionality to demonstrate destroy functionality */ $document .on('click', '#js-example-destroy button[data-behaviour="destroy"]', function(e) { $('input[type="range"]', e.target.parentNode).rangeslider('destroy'); }) .on('click', '#js-example-destroy button[data-behaviour="initialize"]', function(e) { $('input[type="range"]', e.target.parentNode).rangeslider({ polyfill: false }); }); }); (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-39140220-2'); ga('send', 'pageview'); (function() { var weekday = function() { var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], now = new Date(); return dayNames[now.getDay()]; }; console && console.log('%crangeslider.js\n%cSimple, small and fast JavaScript/jQuery polyfill\nfor the HTML5 <input type=\"range\"> slider element. \n\nThanks for taking a look :)\nIt\'s always nice to see you.\nHave a nice '+ weekday() +'!\n\n<3\n\nAndré', 'font-size:2em;color:#00ff00;', 'color:#404040;font-size:1em;'); })(); ((window.gitter = {}).chat = {}).options = { room: 'andreruffert/rangeslider.js' }; </script>
     <!-- Path to your app js-->
 <!--     <script type="text/javascript" src="path/to/my-app.js"></script> -->
   </body>
