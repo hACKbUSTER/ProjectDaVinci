@@ -20,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
-    
     self.webView.delegate = self;
     [self.view addSubview:self.webView];
     
@@ -53,18 +52,17 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-
-    NSString *theTitle=[webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-    if (theTitle.length > 10) {
-        theTitle = [[theTitle substringToIndex:9] stringByAppendingString:@"…"];
-    }
-    self.title = theTitle;
     //    [self.progressView setProgress:1 animated:NO];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-    NSLog(@"fuck? :%@",error.debugDescription);
+    NSLog(@"didFailLoadWithError? :%@",error.debugDescription);
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+}
+
+- (void)reloadWebView
+{
+    [self.webView reload];
 }
 
 /*

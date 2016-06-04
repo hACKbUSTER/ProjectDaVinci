@@ -24,7 +24,6 @@
     
         // Override point for customization after application launch.
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"resource" ofType:@"zip"];
-        NSLog(@"file path:%@",filePath);
         
         ZipArchive* zip = [[ZipArchive alloc] init];
         
@@ -36,10 +35,8 @@
         if( [zip UnzipOpenFile:filePath] )
         {
             BOOL ret = [zip UnzipFileTo:unzipto overWrite:YES];
-            NSLog(@"fuck!");
             if( NO==ret )
             {
-                NSLog(@"fuck?");
             }
             [zip UnzipCloseFile];
         }
