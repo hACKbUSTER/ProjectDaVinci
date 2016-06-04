@@ -12,9 +12,9 @@
          }
 
          .rangeslider--horizontal {
-             height: 5px;
+             height: 10px;
              left: 25%;
-             width: 50%;
+             width: 80%;
          }
 
          .rangeslider--vertical {
@@ -45,8 +45,8 @@
              background: white;
              cursor: pointer;
              display: inline-block;
-             width: 15px;
-             height: 15px;
+             width: 25px;
+             height: 25px;
              position: absolute;
              background-size: 100%;
              -moz-border-radius: 50%;

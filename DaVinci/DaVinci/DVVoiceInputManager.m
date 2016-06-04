@@ -38,7 +38,8 @@
         [[IFlySpeechUnderstander sharedInstance] setParameter:@"json" forKey:@"rst"];
         [[IFlySpeechUnderstander sharedInstance] setParameter: @"0" forKey: @"asr_ppt"];
         
-        _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance]; _iFlySpeechSynthesizer.delegate = self;
+        _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance];
+        _iFlySpeechSynthesizer.delegate = self;
         //语速,取值范围 0~100
         
         [_iFlySpeechSynthesizer setParameter:@"60" forKey:[IFlySpeechConstant SPEED]];
@@ -92,6 +93,9 @@
 
 - (void) onCompleted:(IFlySpeechError *) error
 {
+    if (error.errorCode == 0) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_speaker_completed" object:nil];
+    }
 }
 
 //合成开始
@@ -112,19 +116,18 @@
 - (void) onError:(IFlySpeechError *) errorCode
 {
     NSLog(@"onError : %@,%d",errorCode.errorDesc,errorCode.errorCode);
-    
-    // for test
-    //[[NSNotificationCenter defaultCenter] postNotificationName:@"fuck_create_event" object:nil];
 }
 
 - (void) onResults:(NSArray *) results isLast:(BOOL)isLast
 {
     if (isLast && [results count] > 0) {
+        
         NSString *jsonStr = ((NSDictionary *)results[0]).allKeys[0];
         
         NSData* jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *iFlyDic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSUTF8StringEncoding error:nil];
         NSLog(@"onResults : %@||||",iFlyDic);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_understander_result" object:nil userInfo:@{@"result":iFlyDic}];
     } else {
         NSLog(@"onResults[others] : %@||||",results);
     }

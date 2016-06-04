@@ -32,8 +32,8 @@
     self.customView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, -50.0f, ScreenWidth, 50.0f)];
     _customView.backgroundColor = self.view.tintColor;
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(customViewTapped:)];
-    [_customView addGestureRecognizer:tap];
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(customViewTapped:)];
+//    [_customView addGestureRecognizer:tap];
     
     [self.view addSubview:_customView];
     
@@ -64,7 +64,21 @@
     _customViewLabel.userInteractionEnabled = NO;
     [_customView addSubview:_customViewLabel];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(understandText:) name:@"dv_understander_result" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(speakerCompleted:) name:@"dv_speaker_completed" object:nil];
     // Do any additional setup after loading the view.
+}
+
+- (void)speakerCompleted:(NSNotification *)notif
+{
+    [self showLoadingView];
+}
+
+- (void)understandText:(NSNotification *)notif
+{
+    [self hideLoadingView];
+    self.customViewLabel.text = @"你个贱人";
+    [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -109,7 +123,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-//    [self showCustomViewAnimated:YES withTitle:@"Are you fucking kidding me?"];
+    [self showCustomViewAnimated:YES withTitle:@"Are you fucking kidding me?"];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     //    [self.progressView setProgress:1 animated:NO];
@@ -143,10 +157,9 @@
         self.webView.height = self.view.height - 50.0f;
     } completion:^(BOOL finished) {
         [self blinkAnimationForTitleLabel];
-//        [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
-//        [[DVVoiceInputManager sharedManager] beginRecording:nil];
+        [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人,你个贱人,你个贱人,你个贱人"];
 		
-		[self showLoadingView];
+		// [self showLoadingView];
     }];
 }
 
@@ -164,14 +177,16 @@
         self.webView.top = 0.0f;
     } completion:^(BOOL finished) {
         isShowingCustomView = NO;
+        [self hideLoadingView];
         [_customViewLabel.layer removeAllAnimations];
     }];
 }
 
 - (void)showLoadingView
 {
+    [[DVVoiceInputManager sharedManager] beginRecording:nil];
 	_customViewLabel.hidden = TRUE;
-	_loadingView = [[DVLoadingView alloc] initWithMaxHeight:30 minHeight:8 width:5 minAlpha:0.2 spacing:5 color:[UIColor whiteColor]];
+	_loadingView = [[DVLoadingView alloc] initWithMaxHeight:15 minHeight:8 width:4 minAlpha:0.2 spacing:5 color:[UIColor whiteColor]];
 	[_loadingView setCenter:CGPointMake(_customView.center.x, _customView.center.y + 8)];
 	[_customView addSubview:_loadingView];
 }
