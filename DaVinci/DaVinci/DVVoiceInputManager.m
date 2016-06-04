@@ -92,6 +92,9 @@
 
 - (void) onCompleted:(IFlySpeechError *) error
 {
+    if (error == nil) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_speaker_completed" object:nil];
+    }
 }
 
 //合成开始
@@ -112,9 +115,6 @@
 - (void) onError:(IFlySpeechError *) errorCode
 {
     NSLog(@"onError : %@,%d",errorCode.errorDesc,errorCode.errorCode);
-    
-    // for test
-    //[[NSNotificationCenter defaultCenter] postNotificationName:@"fuck_create_event" object:nil];
 }
 
 - (void) onResults:(NSArray *) results isLast:(BOOL)isLast
@@ -125,6 +125,7 @@
         NSData* jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *iFlyDic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSUTF8StringEncoding error:nil];
         NSLog(@"onResults : %@||||",iFlyDic);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_understander_result" object:nil userInfo:@{@"result":iFlyDic}];
     } else {
         NSLog(@"onResults[others] : %@||||",results);
     }
