@@ -82,36 +82,11 @@
 - (void)understandText:(NSNotification *)notif
 {
     [self hideLoadingView];
-<<<<<<< Updated upstream
     NSDictionary *dict = notif.userInfo;
     // [dict objectForKey:@"ws"]
     NSString *input = [dict objectForKey:@"result"];
     self.customViewLabel.text = input;
     [_inputManager startSpeakText:input];
-=======
-    NSDictionary *iFlyDic = [[notif userInfo] objectForKey:@"result"];
-    NSString *text = [[[iFlyDic valueForKey:@"ws"] valueForKey:@"cw"] valueForKey:@"w"];
-    if ([text containsString:@"。"])
-    {
-        return;
-    }else
-    {
-        NSMutableArray *matchDict = [[DVOrderMatchManager sharedManager] getActionResultFromiFlyResult:text];
-        if (matchDict != nil)
-        {
-            NSString *response = matchDict[0];
-            NSString *jsAction = matchDict[1];
-            
-            self.customViewLabel.text = response;
-            [[DVVoiceInputManager sharedManager] startSpeakText:response];
-
-            
-        }else
-        {
-            return;
-        }
-    }
->>>>>>> Stashed changes
 }
 
 - (void)didReceiveMemoryWarning {
