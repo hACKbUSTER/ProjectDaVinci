@@ -10,78 +10,82 @@
 
 @interface DVVoiceInputManager()
 {
-    BOOL isRecording;
-
-    IFlySpeechSynthesizer * _iFlySpeechSynthesizer;
 }
+
+@property (weak, nonatomic) IFlySpeechSynthesizer * iFlySpeechSynthesizer;
+@property (weak, nonatomic) IFlySpeechRecognizer * iFlySpeechUnderstander;
 
 @end
 
 @implementation DVVoiceInputManager 
 
-+ (id)sharedManager {
-    static DVVoiceInputManager *sharedMyManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedMyManager = [[self alloc] init];
-    });
-    return sharedMyManager;
-}
-
 - (id)init {
     if (self = [super init])
     {
-        isRecording = NO;
-        [[IFlySpeechUnderstander sharedInstance] setDelegate:self];
-        [[IFlySpeechUnderstander sharedInstance] setParameter: @"iat" forKey: @"domain"];
-        [[IFlySpeechUnderstander sharedInstance] setParameter:@"2.0" forKey:@"nlp_version"];
-        [[IFlySpeechUnderstander sharedInstance] setParameter:@"json" forKey:@"rst"];
-        [[IFlySpeechUnderstander sharedInstance] setParameter: @"0" forKey: @"asr_ppt"];
-        
-        _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance];
-        _iFlySpeechSynthesizer.delegate = self;
-        //语速,取值范围 0~100
-        
-        [_iFlySpeechSynthesizer setParameter:@"60" forKey:[IFlySpeechConstant SPEED]];
-        [_iFlySpeechSynthesizer setParameter:@"50" forKey: [IFlySpeechConstant VOLUME]];
-        [_iFlySpeechSynthesizer setParameter:@"60" forKey: [IFlySpeechConstant PITCH]];
-        [_iFlySpeechSynthesizer setParameter:@"cloud" forKey: [IFlySpeechConstant ENGINE_TYPE]];
-        [_iFlySpeechSynthesizer setParameter:@"vixy" forKey: [IFlySpeechConstant VOICE_NAME]];
-        [_iFlySpeechSynthesizer setParameter:@"10000" forKey: [IFlySpeechConstant VAD_BOS]];
-        [_iFlySpeechSynthesizer setParameter:@"2000" forKey: [IFlySpeechConstant VAD_EOS]];
-        [_iFlySpeechSynthesizer setParameter:@"read_sentence" forKey: [IFlySpeechConstant ISE_CATEGORY]];
+        [self initSpeechUnderstander];
+        [self initSpeaker];
     }
     return self;
 }
 
-- (BOOL)isRecording
+- (void)initSpeechUnderstander
 {
-    return isRecording;
+    _iFlySpeechUnderstander = [IFlySpeechRecognizer sharedInstance];
+    [_iFlySpeechUnderstander setDelegate:self];
+    
+    [_iFlySpeechUnderstander setParameter: @"iat" forKey: @"domain"];
+     [_iFlySpeechUnderstander setParameter: @"plain" forKey: @"result_type"];
+    [_iFlySpeechUnderstander setParameter: [IFlySpeechConstant ASR_PTT_NODOT] forKey: [IFlySpeechConstant ASR_PTT]];
+    [_iFlySpeechUnderstander setParameter:@"10000" forKey: [IFlySpeechConstant VAD_BOS]];
+    [_iFlySpeechUnderstander setParameter:@"5000" forKey: [IFlySpeechConstant VAD_EOS]];
+}
+
+- (void)initSpeaker
+{
+    _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance];
+    _iFlySpeechSynthesizer.delegate = self;
+    //语速,取值范围 0~100
+    
+    [_iFlySpeechSynthesizer setParameter:@"60" forKey:[IFlySpeechConstant SPEED]];
+    [_iFlySpeechSynthesizer setParameter:@"50" forKey: [IFlySpeechConstant VOLUME]];
+    [_iFlySpeechSynthesizer setParameter:@"60" forKey: [IFlySpeechConstant PITCH]];
+    [_iFlySpeechSynthesizer setParameter:@"cloud" forKey: [IFlySpeechConstant ENGINE_TYPE]];
+    [_iFlySpeechSynthesizer setParameter:@"vixy" forKey: [IFlySpeechConstant VOICE_NAME]];
+    [_iFlySpeechSynthesizer setParameter:@"read_sentence" forKey: [IFlySpeechConstant ISE_CATEGORY]];
 }
 
 - (void)beginRecording:(id)sender
 {
-    isRecording = YES;
+    if(_iFlySpeechUnderstander == nil)
+    {
+        [self initSpeechUnderstander];
+    }
     
-    [[IFlySpeechUnderstander sharedInstance] startListening];
+    [_iFlySpeechUnderstander cancel];
+
+    [_iFlySpeechUnderstander startListening];
     
     NSLog(@"beginRecording");
 }
 
 - (void)endRecording:(id)sender
 {
-    isRecording = NO;
-
-    [[IFlySpeechUnderstander sharedInstance] stopListening];
+    if (!_iFlySpeechUnderstander.isListening) {
+        return;
+    }
+    
+    [_iFlySpeechUnderstander stopListening];
     
     NSLog(@"endRecording");
 }
 
 - (void)cancelRecording:(id)sender
 {
-    isRecording = NO;
+    if (!_iFlySpeechUnderstander.isListening) {
+        return;
+    }
     
-    [[IFlySpeechUnderstander sharedInstance] cancel];
+    [_iFlySpeechUnderstander cancel];
     
     NSLog(@"cancelRecording");
 }
@@ -111,23 +115,27 @@
 //合成播放进度
 - (void) onSpeakProgress:(int) progress
 {
+//    if (progress >= 1) {
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_speaker_completed" object:nil];
+//    }
 }
 
 - (void) onError:(IFlySpeechError *) errorCode
 {
     NSLog(@"onError : %@,%d",errorCode.errorDesc,errorCode.errorCode);
+    if (errorCode.errorCode == 0) {
+        [self beginRecording:nil];
+//        [_iFlySpeechUnderstander destroy];
+    }
 }
 
 - (void) onResults:(NSArray *) results isLast:(BOOL)isLast
 {
-    if (isLast && [results count] > 0) {
+    if (!isLast && [results count] > 0) {
         
         NSString *jsonStr = ((NSDictionary *)results[0]).allKeys[0];
         
-        NSData* jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-        NSDictionary *iFlyDic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSUTF8StringEncoding error:nil];
-        NSLog(@"onResults : %@||||",iFlyDic);
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_understander_result" object:nil userInfo:@{@"result":iFlyDic}];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_understander_result" object:nil userInfo:@{@"result":jsonStr}];
     } else {
         NSLog(@"onResults[others] : %@||||",results);
     }
@@ -136,8 +144,5 @@
 // pass volume change to parent
 - (void) onVolumeChanged: (int)volume
 {
-    if (self.onVolumnChange) {
-        self.onVolumnChange(volume);
-    }
 }
 @end
