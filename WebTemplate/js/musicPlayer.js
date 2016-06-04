@@ -6,7 +6,7 @@ var moveStep = 10;
 var selector = '[data-rangeslider]';
 
 var ap1 = new APlayer({
-    element: document.getElementById('player1'),
+    element: document.getElementById('player'),
     narrow: false,
     autoplay: false,
     showlrc: false,
