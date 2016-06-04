@@ -32,8 +32,8 @@
     self.customView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, -50.0f, ScreenWidth, 50.0f)];
     _customView.backgroundColor = self.view.tintColor;
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(customViewTapped:)];
-    [_customView addGestureRecognizer:tap];
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(customViewTapped:)];
+//    [_customView addGestureRecognizer:tap];
     
     [self.view addSubview:_customView];
     
