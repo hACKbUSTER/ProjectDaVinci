@@ -20,29 +20,25 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
     
-    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"t"]) {
+    // Override point for customization after application launch.
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"resource" ofType:@"zip"];
     
-        // Override point for customization after application launch.
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"resource" ofType:@"zip"];
-        
-        ZipArchive* zip = [[ZipArchive alloc] init];
-        
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *documentpath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
-        
-        NSString* unzipto = [documentpath stringByAppendingString:@"/"] ;
-        
-        if( [zip UnzipOpenFile:filePath] )
+    ZipArchive* zip = [[ZipArchive alloc] init];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentpath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+    
+    NSString* unzipto = [documentpath stringByAppendingString:@"/"] ;
+    
+    if( [zip UnzipOpenFile:filePath] )
+    {
+        BOOL ret = [zip UnzipFileTo:unzipto overWrite:YES];
+        if( NO==ret )
         {
-            BOOL ret = [zip UnzipFileTo:unzipto overWrite:YES];
-            if( NO==ret )
-            {
-            }
-            [zip UnzipCloseFile];
         }
-        
-        [[NSUserDefaults standardUserDefaults] setValue:@(1) forKey:@"t"];
+        [zip UnzipCloseFile];
     }
     
     [IFlySetting setLogFile:LVL_ALL];
@@ -51,8 +47,8 @@
     [IFlySetting showLogcat:YES];
     
     //设置sdk的工作路径
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSString *cachePath = [paths objectAtIndex:0];
+    NSArray *paths_t = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cachePath = [paths_t objectAtIndex:0];
     [IFlySetting setLogFilePath:cachePath];
     
     //创建语音配置,appid必须要传入，仅执行一次则可

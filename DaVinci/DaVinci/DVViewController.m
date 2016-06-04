@@ -10,6 +10,7 @@
 #import "UIView+ViewFrameGeometry.h"
 #import "DVVoiceInputManager.h"
 #import "DVLoadingView.h"
+#import <JavaScriptCore/JavaScriptCore.h>  
 
 @interface DVViewController () <UIWebViewDelegate>
 {
@@ -80,10 +81,11 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    [self showCustomViewAnimated:YES withTitle:@"Are you fucking kidding me?"];
+//    [self showCustomViewAnimated:YES withTitle:@"Are you fucking kidding me?"];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     //    [self.progressView setProgress:1 animated:NO];
+    [_webView stringByEvaluatingJavaScriptFromString:@"toggleTabbar(true)"];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
@@ -103,7 +105,7 @@
     }
     
     _customViewLabel.text = title;
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     isShowingCustomView = YES;
     
     [UIView animateWithDuration:0.3f delay:0.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
@@ -112,8 +114,8 @@
         self.webView.height = self.view.height - 50.0f;
     } completion:^(BOOL finished) {
         [self blinkAnimationForTitleLabel];
-        [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
-        [[DVVoiceInputManager sharedManager] beginRecording:nil];
+//        [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
+//        [[DVVoiceInputManager sharedManager] beginRecording:nil];
 		
 		[self showLoadingView];
     }];
@@ -125,7 +127,7 @@
         return;
     }
     
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
     
     [UIView animateWithDuration:0.3f delay:0.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.customView.top = -50.0f;

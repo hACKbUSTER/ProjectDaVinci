@@ -36,6 +36,7 @@
 		5062B4BD1D02FA90000F39FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4BC1D02FA90000F39FB /* UIKit.framework */; };
 		5062B4BF1D02FA96000F39FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */; };
 		5062B4C21D02FAD9000F39FB /* DVVoiceInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */; };
+		5062B4C41D033E7F000F39FB /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4C31D033E7F000F39FB /* JavaScriptCore.framework */; };
 		714E2D8B1D031E6800EB7CA0 /* DVLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 714E2D891D031E6800EB7CA0 /* DVLoadingView.m */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5062B4C01D02FAD9000F39FB /* DVVoiceInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVVoiceInputManager.h; sourceTree = "<group>"; };
 		5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVVoiceInputManager.m; sourceTree = "<group>"; };
+		5062B4C31D033E7F000F39FB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		714E2D891D031E6800EB7CA0 /* DVLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVLoadingView.m; sourceTree = "<group>"; };
 		714E2D8A1D031E6800EB7CA0 /* DVLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVLoadingView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5062B4C41D033E7F000F39FB /* JavaScriptCore.framework in Frameworks */,
 				5062B4BF1D02FA96000F39FB /* CoreGraphics.framework in Frameworks */,
 				5062B4BD1D02FA90000F39FB /* UIKit.framework in Frameworks */,
 				5062B4BB1D02FA89000F39FB /* Foundation.framework in Frameworks */,
@@ -270,6 +273,7 @@
 		5062B4A21D02DB58000F39FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5062B4C31D033E7F000F39FB /* JavaScriptCore.framework */,
 				5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */,
 				5062B4BC1D02FA90000F39FB /* UIKit.framework */,
 				5062B4BA1D02FA89000F39FB /* Foundation.framework */,
