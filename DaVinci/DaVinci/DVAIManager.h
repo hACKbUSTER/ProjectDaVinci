@@ -10,4 +10,6 @@
 
 @interface DVAIManager : NSObject
 
++ (id) sharedManager;
+
 @end

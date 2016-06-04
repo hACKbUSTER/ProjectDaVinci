@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZipArchive.h"
+#import "iflyMSC/IFlyMSC.h"
 
 @interface AppDelegate ()
 
@@ -43,6 +44,23 @@
         
         [[NSUserDefaults standardUserDefaults] setValue:@(1) forKey:@"t"];
     }
+    
+    [IFlySetting setLogFile:LVL_ALL];
+    
+    //打开输出在console的log开关
+    [IFlySetting showLogcat:YES];
+    
+    //设置sdk的工作路径
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cachePath = [paths objectAtIndex:0];
+    [IFlySetting setLogFilePath:cachePath];
+    
+    //创建语音配置,appid必须要传入，仅执行一次则可
+    NSString *initString = [[NSString alloc] initWithFormat:@"appid=5752c20c"];
+    
+    //所有服务启动前，需要确保执行createUtility
+    [IFlySpeechUtility createUtility:initString];
+    
     return YES;
 }
 

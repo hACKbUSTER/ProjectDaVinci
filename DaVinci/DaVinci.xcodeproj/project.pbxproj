@@ -24,6 +24,18 @@
 		5062B4A11D02DB53000F39FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4A01D02DB53000F39FB /* libz.tbd */; };
 		5062B4A41D02DC5A000F39FB /* resource.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5062B4A31D02DC5A000F39FB /* resource.zip */; };
 		5062B4A71D02DEF0000F39FB /* UIView+ViewFrameGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4A61D02DEF0000F39FB /* UIView+ViewFrameGeometry.m */; };
+		5062B4AB1D02FA4D000F39FB /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4AA1D02FA4D000F39FB /* iflyMSC.framework */; };
+		5062B4AD1D02FA5F000F39FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4AC1D02FA5F000F39FB /* CoreLocation.framework */; };
+		5062B4AF1D02FA65000F39FB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4AE1D02FA65000F39FB /* CoreTelephony.framework */; };
+		5062B4B11D02FA6C000F39FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4B01D02FA6C000F39FB /* AVFoundation.framework */; };
+		5062B4B31D02FA71000F39FB /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4B21D02FA71000F39FB /* AddressBook.framework */; };
+		5062B4B51D02FA79000F39FB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4B41D02FA79000F39FB /* AudioToolbox.framework */; };
+		5062B4B71D02FA7D000F39FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4B61D02FA7D000F39FB /* SystemConfiguration.framework */; };
+		5062B4B91D02FA84000F39FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4B81D02FA84000F39FB /* QuartzCore.framework */; };
+		5062B4BB1D02FA89000F39FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4BA1D02FA89000F39FB /* Foundation.framework */; };
+		5062B4BD1D02FA90000F39FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4BC1D02FA90000F39FB /* UIKit.framework */; };
+		5062B4BF1D02FA96000F39FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */; };
+		5062B4C21D02FAD9000F39FB /* DVVoiceInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +89,19 @@
 		5062B4A31D02DC5A000F39FB /* resource.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = resource.zip; sourceTree = "<group>"; };
 		5062B4A51D02DEF0000F39FB /* UIView+ViewFrameGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewFrameGeometry.h"; sourceTree = "<group>"; };
 		5062B4A61D02DEF0000F39FB /* UIView+ViewFrameGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewFrameGeometry.m"; sourceTree = "<group>"; };
+		5062B4AA1D02FA4D000F39FB /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		5062B4AC1D02FA5F000F39FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5062B4AE1D02FA65000F39FB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5062B4B01D02FA6C000F39FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5062B4B21D02FA71000F39FB /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		5062B4B41D02FA79000F39FB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5062B4B61D02FA7D000F39FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5062B4B81D02FA84000F39FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5062B4BA1D02FA89000F39FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5062B4BC1D02FA90000F39FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5062B4C01D02FAD9000F39FB /* DVVoiceInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVVoiceInputManager.h; sourceTree = "<group>"; };
+		5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVVoiceInputManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +109,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5062B4BF1D02FA96000F39FB /* CoreGraphics.framework in Frameworks */,
+				5062B4BD1D02FA90000F39FB /* UIKit.framework in Frameworks */,
+				5062B4BB1D02FA89000F39FB /* Foundation.framework in Frameworks */,
+				5062B4B91D02FA84000F39FB /* QuartzCore.framework in Frameworks */,
+				5062B4B71D02FA7D000F39FB /* SystemConfiguration.framework in Frameworks */,
+				5062B4B51D02FA79000F39FB /* AudioToolbox.framework in Frameworks */,
+				5062B4B31D02FA71000F39FB /* AddressBook.framework in Frameworks */,
+				5062B4B11D02FA6C000F39FB /* AVFoundation.framework in Frameworks */,
+				5062B4AF1D02FA65000F39FB /* CoreTelephony.framework in Frameworks */,
+				5062B4AD1D02FA5F000F39FB /* CoreLocation.framework in Frameworks */,
 				5062B4A11D02DB53000F39FB /* libz.tbd in Frameworks */,
+				5062B4AB1D02FA4D000F39FB /* iflyMSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +228,8 @@
 			children = (
 				5062B4371D02D1D9000F39FB /* DVAIManager.h */,
 				5062B4381D02D1D9000F39FB /* DVAIManager.m */,
+				5062B4C01D02FAD9000F39FB /* DVVoiceInputManager.h */,
+				5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -227,6 +265,17 @@
 		5062B4A21D02DB58000F39FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */,
+				5062B4BC1D02FA90000F39FB /* UIKit.framework */,
+				5062B4BA1D02FA89000F39FB /* Foundation.framework */,
+				5062B4B81D02FA84000F39FB /* QuartzCore.framework */,
+				5062B4B61D02FA7D000F39FB /* SystemConfiguration.framework */,
+				5062B4B41D02FA79000F39FB /* AudioToolbox.framework */,
+				5062B4B21D02FA71000F39FB /* AddressBook.framework */,
+				5062B4B01D02FA6C000F39FB /* AVFoundation.framework */,
+				5062B4AE1D02FA65000F39FB /* CoreTelephony.framework */,
+				5062B4AC1D02FA5F000F39FB /* CoreLocation.framework */,
+				5062B4AA1D02FA4D000F39FB /* iflyMSC.framework */,
 				5062B4A01D02DB53000F39FB /* libz.tbd */,
 			);
 			name = Frameworks;
@@ -369,6 +418,7 @@
 				5062B4351D02D183000F39FB /* DVViewController.m in Sources */,
 				5062B49C1D02DB0A000F39FB /* mztools.c in Sources */,
 				5062B4001D02C9C6000F39FB /* main.m in Sources */,
+				5062B4C21D02FAD9000F39FB /* DVVoiceInputManager.m in Sources */,
 				5062B4391D02D1D9000F39FB /* DVAIManager.m in Sources */,
 				5062B49F1D02DB0A000F39FB /* ZipArchive.mm in Sources */,
 				5062B49B1D02DB0A000F39FB /* ioapi.c in Sources */,
@@ -513,6 +563,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DaVinci/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinci;
@@ -524,6 +579,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DaVinci/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinci;
