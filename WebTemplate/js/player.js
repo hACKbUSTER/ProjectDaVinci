@@ -1,16 +1,5 @@
 var disk_width = 0.8 * $(window).width()
-var $disk = $('#disk')
-$disk.css('top', ($(window).height() - disk_width)/2)
-$disk.css('left', ($(window).width() - disk_width)/2)
-
-var diskInnerOverOuter = 0.65
-var innerDiskWidth = disk_width * diskInnerOverOuter
-var $coverImg = $('#cover-img')
-$coverImg.css('width', innerDiskWidth)
-$coverImg.css('height', innerDiskWidth)
-$coverImg.css('borderRadius', disk_width * diskInnerOverOuter * 0.5)
-$coverImg.css('top', (disk_width - innerDiskWidth)/2)
-$coverImg.css('left', (disk_width - innerDiskWidth)/2)
+setDiskWidth(disk_width)
 
 var angle = 0;
   setInterval(function(){
@@ -59,6 +48,22 @@ function setSongName(name) {
 }
 
 function setCoverImage(url) {
-	$('.page-content').css('backgroundImage', url)
+	$('#bg-img').attr('src', url)
 	$('#cover-img').attr('src', url)
+}
+
+function setDiskWidth(width) {
+	var $disk = $('#disk')
+	$disk.css('width', width)
+	$disk.css('top', ($(window).height() - width)/2)
+	$disk.css('left', ($(window).width() - width)/2)
+
+	var diskInnerOverOuter = 0.65
+	var innerDiskWidth = width * diskInnerOverOuter
+	var $coverImg = $('#cover-img')
+	$coverImg.css('width', innerDiskWidth)
+	$coverImg.css('height', innerDiskWidth)
+	$coverImg.css('borderRadius', width * diskInnerOverOuter * 0.5)
+	$coverImg.css('top', (width - innerDiskWidth)/2)
+	$coverImg.css('left', (width - innerDiskWidth)/2)
 }

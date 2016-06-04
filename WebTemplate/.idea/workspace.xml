@@ -87,6 +87,7 @@
           </provider>
         </entry>
       </file>
+
       <file leaf-file-name="player1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player1.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -329,12 +330,12 @@
       <option name="number" value="Default" />
       <updated>1465032747634</updated>
       <workItem from="1465032749846" duration="18932000" />
-      <workItem from="1465065626477" duration="2377000" />
+      <workItem from="1465065626477" duration="2570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21309000" />
+    <option name="totallyTimeSpent" value="21502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
