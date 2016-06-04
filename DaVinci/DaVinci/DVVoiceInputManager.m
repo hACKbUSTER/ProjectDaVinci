@@ -11,8 +11,6 @@
 @interface DVVoiceInputManager()
 {
     BOOL isRecording;
-
-    IFlySpeechSynthesizer * _iFlySpeechSynthesizer;
 }
 
 @end

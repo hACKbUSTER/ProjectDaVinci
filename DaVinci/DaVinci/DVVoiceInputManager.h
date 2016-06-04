@@ -12,6 +12,7 @@
 @interface DVVoiceInputManager : NSObject <IFlySpeechRecognizerDelegate,IFlySpeechSynthesizerDelegate>
 
 @property (nonatomic, copy) void (^onVolumnChange)(int volume);
+@property (strong,nonatomic) IFlySpeechSynthesizer * iFlySpeechSynthesizer;
 
 + (id) sharedManager;
 - (void)beginRecording:(id)sender;

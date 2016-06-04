@@ -77,6 +77,8 @@
 - (void)understandText:(NSNotification *)notif
 {
     [self hideLoadingView];
+    NSDictionary *iFlyDic = [[notif userInfo] objectForKey:@"result"];
+    
     self.customViewLabel.text = @"你个贱人";
     [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
 }
