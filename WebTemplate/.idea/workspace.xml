@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/js/tabbar.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.4059829">
-              <caret line="21" column="1" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="32" />
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc;n#toggleTabbar#0" expanded="false" />
               </folding>
@@ -639,7 +639,7 @@
     <entry file="file://$PROJECT_DIR$/js/tabbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4059829">
-          <caret line="21" column="1" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="32" />
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc;n#toggleTabbar#0" expanded="false" />
           </folding>
