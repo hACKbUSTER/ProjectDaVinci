@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		5062B4001D02C9C6000F39FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B3FF1D02C9C6000F39FB /* main.m */; };
 		5062B4031D02C9C6000F39FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4021D02C9C6000F39FB /* AppDelegate.m */; };
-		5062B4061D02C9C6000F39FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4051D02C9C6000F39FB /* ViewController.m */; };
 		5062B4091D02C9C6000F39FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062B4071D02C9C6000F39FB /* Main.storyboard */; };
 		5062B40B1D02C9C6000F39FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5062B40A1D02C9C6000F39FB /* Assets.xcassets */; };
 		5062B40E1D02C9C6000F39FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062B40C1D02C9C6000F39FB /* LaunchScreen.storyboard */; };
 		5062B4191D02C9C6000F39FB /* DaVinciTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4181D02C9C6000F39FB /* DaVinciTests.m */; };
 		5062B4241D02C9C6000F39FB /* DaVinciUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4231D02C9C6000F39FB /* DaVinciUITests.m */; };
+		5062B4351D02D183000F39FB /* DVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4341D02D183000F39FB /* DVViewController.m */; };
+		5062B4391D02D1D9000F39FB /* DVAIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4381D02D1D9000F39FB /* DVAIManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		5062B3FF1D02C9C6000F39FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5062B4011D02C9C6000F39FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5062B4021D02C9C6000F39FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5062B4041D02C9C6000F39FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5062B4051D02C9C6000F39FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5062B4081D02C9C6000F39FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5062B40A1D02C9C6000F39FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5062B40D1D02C9C6000F39FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		5062B41F1D02C9C6000F39FB /* DaVinciUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaVinciUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5062B4231D02C9C6000F39FB /* DaVinciUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaVinciUITests.m; sourceTree = "<group>"; };
 		5062B4251D02C9C6000F39FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5062B4331D02D183000F39FB /* DVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVViewController.h; sourceTree = "<group>"; };
+		5062B4341D02D183000F39FB /* DVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVViewController.m; sourceTree = "<group>"; };
+		5062B4371D02D1D9000F39FB /* DVAIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVAIManager.h; sourceTree = "<group>"; };
+		5062B4381D02D1D9000F39FB /* DVAIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVAIManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +104,9 @@
 		5062B3FD1D02C9C6000F39FB /* DaVinci */ = {
 			isa = PBXGroup;
 			children = (
-				5062B4011D02C9C6000F39FB /* AppDelegate.h */,
-				5062B4021D02C9C6000F39FB /* AppDelegate.m */,
-				5062B4041D02C9C6000F39FB /* ViewController.h */,
-				5062B4051D02C9C6000F39FB /* ViewController.m */,
-				5062B4071D02C9C6000F39FB /* Main.storyboard */,
-				5062B40A1D02C9C6000F39FB /* Assets.xcassets */,
-				5062B40C1D02C9C6000F39FB /* LaunchScreen.storyboard */,
-				5062B40F1D02C9C6000F39FB /* Info.plist */,
+				5062B4361D02D1AC000F39FB /* Service */,
+				5062B4321D02D15B000F39FB /* Views */,
+				5062B4311D02D153000F39FB /* Controllers */,
 				5062B3FE1D02C9C6000F39FB /* Supporting Files */,
 			);
 			path = DaVinci;
@@ -117,6 +115,12 @@
 		5062B3FE1D02C9C6000F39FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5062B4011D02C9C6000F39FB /* AppDelegate.h */,
+				5062B4021D02C9C6000F39FB /* AppDelegate.m */,
+				5062B4071D02C9C6000F39FB /* Main.storyboard */,
+				5062B40A1D02C9C6000F39FB /* Assets.xcassets */,
+				5062B40C1D02C9C6000F39FB /* LaunchScreen.storyboard */,
+				5062B40F1D02C9C6000F39FB /* Info.plist */,
 				5062B3FF1D02C9C6000F39FB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +142,31 @@
 				5062B4251D02C9C6000F39FB /* Info.plist */,
 			);
 			path = DaVinciUITests;
+			sourceTree = "<group>";
+		};
+		5062B4311D02D153000F39FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5062B4331D02D183000F39FB /* DVViewController.h */,
+				5062B4341D02D183000F39FB /* DVViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5062B4321D02D15B000F39FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5062B4361D02D1AC000F39FB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5062B4371D02D1D9000F39FB /* DVAIManager.h */,
+				5062B4381D02D1D9000F39FB /* DVAIManager.m */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5062B4061D02C9C6000F39FB /* ViewController.m in Sources */,
 				5062B4031D02C9C6000F39FB /* AppDelegate.m in Sources */,
+				5062B4351D02D183000F39FB /* DVViewController.m in Sources */,
 				5062B4001D02C9C6000F39FB /* main.m in Sources */,
+				5062B4391D02D1D9000F39FB /* DVAIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

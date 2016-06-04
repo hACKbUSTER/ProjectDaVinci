@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DVViewController.h
 //  DaVinci
 //
 //  Created by 叔 陈 on 16/6/4.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DVViewController : UIViewController
 
 @end
-
