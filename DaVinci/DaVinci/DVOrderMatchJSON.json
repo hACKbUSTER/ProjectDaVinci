@@ -1,0 +1,12 @@
+{
+    "orderSteps": [
+                   {
+                       "底部栏目":["好的","javascrpit"],
+                       "底栏": ["好的","javascrpit"]
+                   },
+                   {
+                       "大些": ["好的","javascrpit"],
+                       "小些": ["好的","javascrpit"]
+                   }
+                   ]
+}

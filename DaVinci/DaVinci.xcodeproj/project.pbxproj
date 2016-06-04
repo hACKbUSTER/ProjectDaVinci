@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DB90E1E1D03704900D900C6 /* DVOrderMatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB90E1D1D03704900D900C6 /* DVOrderMatchManager.m */; };
 		5062B4001D02C9C6000F39FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B3FF1D02C9C6000F39FB /* main.m */; };
 		5062B4031D02C9C6000F39FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4021D02C9C6000F39FB /* AppDelegate.m */; };
 		5062B4091D02C9C6000F39FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062B4071D02C9C6000F39FB /* Main.storyboard */; };
@@ -58,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DB90E1C1D03704900D900C6 /* DVOrderMatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVOrderMatchManager.h; sourceTree = "<group>"; };
+		0DB90E1D1D03704900D900C6 /* DVOrderMatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVOrderMatchManager.m; sourceTree = "<group>"; };
+		0DB90E1F1D0379EB00D900C6 /* DVOrderMatchJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DVOrderMatchJSON.json; sourceTree = "<group>"; };
 		5062B3FB1D02C9C6000F39FB /* DaVinci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaVinci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5062B3FF1D02C9C6000F39FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5062B4011D02C9C6000F39FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -238,6 +242,9 @@
 				5062B4381D02D1D9000F39FB /* DVAIManager.m */,
 				5062B4C01D02FAD9000F39FB /* DVVoiceInputManager.h */,
 				5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */,
+				0DB90E1C1D03704900D900C6 /* DVOrderMatchManager.h */,
+				0DB90E1D1D03704900D900C6 /* DVOrderMatchManager.m */,
+				0DB90E1F1D0379EB00D900C6 /* DVOrderMatchJSON.json */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -425,6 +432,7 @@
 				5062B49E1D02DB0A000F39FB /* zip.c in Sources */,
 				5062B49D1D02DB0A000F39FB /* unzip.c in Sources */,
 				5062B4351D02D183000F39FB /* DVViewController.m in Sources */,
+				0DB90E1E1D03704900D900C6 /* DVOrderMatchManager.m in Sources */,
 				5062B49C1D02DB0A000F39FB /* mztools.c in Sources */,
 				714E2D8B1D031E6800EB7CA0 /* DVLoadingView.m in Sources */,
 				5062B4001D02C9C6000F39FB /* main.m in Sources */,
