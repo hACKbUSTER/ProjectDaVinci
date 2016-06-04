@@ -12,6 +12,7 @@
 
 @property (nonatomic,strong) NSMutableArray *matchArray;
 @property (nonatomic) int currentIndex;
+- (BOOL)currentIndexAdd;
 
 - (NSMutableArray *)getActionResultFromiFlyResult:(NSString *)text;
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DB90E1E1D03704900D900C6 /* DVOrderMatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB90E1D1D03704900D900C6 /* DVOrderMatchManager.m */; };
+		0DB90E221D03993F00D900C6 /* DVOrderMatchJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DB90E1F1D0379EB00D900C6 /* DVOrderMatchJSON.json */; };
 		5062B4001D02C9C6000F39FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B3FF1D02C9C6000F39FB /* main.m */; };
 		5062B4031D02C9C6000F39FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4021D02C9C6000F39FB /* AppDelegate.m */; };
 		5062B4091D02C9C6000F39FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062B4071D02C9C6000F39FB /* Main.storyboard */; };
@@ -400,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB90E221D03993F00D900C6 /* DVOrderMatchJSON.json in Resources */,
 				5062B40E1D02C9C6000F39FB /* LaunchScreen.storyboard in Resources */,
 				5062B4A41D02DC5A000F39FB /* resource.zip in Resources */,
 				5062B40B1D02C9C6000F39FB /* Assets.xcassets in Resources */,

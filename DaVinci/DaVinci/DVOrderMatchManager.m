@@ -24,6 +24,17 @@
 
     return nil;
 }
+- (BOOL)currentIndexAdd
+{
+    if (_currentIndex < matchArray.count)
+    {
+        _currentIndex ++;
+        return true;
+    }else
+    {
+        return false;
+    }
+}
 
 #pragma mark Singleton Methods
 + (id)sharedManager {
@@ -42,11 +53,18 @@
         matchArray = [NSMutableArray array];
         
         NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"DVOrderMatchJSON" ofType:@"json"];
-        NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
+        NSData *jsonData = [[NSData alloc] initWithContentsOfFile:jsonPath];
         
-        NSError *error;
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
-        matchArray = [json objectForKey:@"orderSteps"];
+        if (jsonData)
+        {
+            NSError *error;
+            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+            if (error)
+            {
+                NSLog(@"%@",[error debugDescription]);
+            }
+            matchArray = [json objectForKey:@"orderSteps"];
+        }
     }
     return self;
 }

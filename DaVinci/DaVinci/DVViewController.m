@@ -81,12 +81,22 @@
 
 - (void)understandText:(NSNotification *)notif
 {
-    [self hideLoadingView];
     NSDictionary *dict = notif.userInfo;
-    // [dict objectForKey:@"ws"]
+
     NSString *input = [dict objectForKey:@"result"];
-    self.customViewLabel.text = input;
-    [_inputManager startSpeakText:input];
+    NSMutableArray *array = [[DVOrderMatchManager sharedManager] getActionResultFromiFlyResult:input];
+    if (array)
+    {
+        [self hideLoadingView];
+        self.customViewLabel.text = array[0];
+        [_inputManager startSpeakText:array[0]];
+        [[DVOrderMatchManager sharedManager] currentIndexAdd];
+        [self.webView stringByEvaluatingJavaScriptFromString:array[1]];
+    }else
+    {
+        self.customViewLabel.text = input;
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,12 +1,27 @@
 {
     "orderSteps": [
                    {
-                       "底部栏目":["好的","javascrpit"],
-                       "底栏": ["好的","javascrpit"]
+                   "底部栏目":["好的，您需要新添加底部栏目么","toggleTabbar(true);"],
+                   "底栏": ["好的，您需要新添加底部栏目么","toggleTabbar(true);"],
+                   "底部栏": ["好的，您需要新添加底部栏目么","toggleTabbar(true);"]
                    },
                    {
-                       "大些": ["好的","javascrpit"],
-                       "小些": ["好的","javascrpit"]
+                   "添加朋友页面":["好的，您还需要添加么","addTabbarCell('朋友','friend');"],
+                   "朋友": ["好的，您还需要添加么","addTabbarCell('朋友','friend');"],
+                   "添加朋友": ["好的，您还需要添加么","addTabbarCell('朋友','friend');"]
+                   },
+                   {
+                   "添加个人页面":["好的，您还需要添加么","addTabbarCell('账号','account');"],
+                   "账号": ["好的，您还需要添加么","addTabbarCell('账号','account');"],
+                   "个人": ["好的，您还需要添加么","addTabbarCell('账号','account');"],
+                   "添加账号": ["好的，您还需要添加么","addTabbarCell('账号','account');"]
+                   },
+                   {
+                   "不需要了": ["好的，请选择发现主页的内容",""]
+                   },
+                   {
+                   "大些": ["好的","javascrpit"],
+                   "小些": ["好的","javascrpit"]
                    }
                    ]
 }
