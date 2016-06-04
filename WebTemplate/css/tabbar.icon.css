@@ -1,0 +1,40 @@
+.icon-discovery
+{
+	width:24px;
+	height:24px;
+	background-image:url(../img/cm2_btm_icn_discovery@3x-red.svg);
+}.active
+.icon-discovery
+{
+	background-image:url(../img/cm2_btm_icn_discovery@3x.svg);
+}
+.icon-friend
+{
+	width:24px;
+	height:24px;
+	background-image:url(../img/cm2_btm_icn_music@3x.svg);
+}.active
+ .icon-friend
+ {
+	 background-image:url(../img/cm2_btm_icn_music@3x-red.svg);
+ }
+.icon-music
+{
+	width:24px;
+	height:24px;
+	background-image:url(../img/cm2_btm_icn_friend@3x.svg);
+}.active
+ .icon-music
+ {
+	 background-image:url(../img/cm2_btm_icn_friend@3x-red.svg);
+ }
+.icon-account
+{
+	width:24px;
+	height:24px;
+	background-image:url(../img/cm2_btm_icn_account@3x.svg);
+}.active
+ .icon-account
+ {
+	 background-image:url(../img/cm2_btm_icn_account@3x-red.svg);
+ }
