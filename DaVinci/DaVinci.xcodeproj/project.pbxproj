@@ -36,6 +36,7 @@
 		5062B4BD1D02FA90000F39FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4BC1D02FA90000F39FB /* UIKit.framework */; };
 		5062B4BF1D02FA96000F39FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */; };
 		5062B4C21D02FAD9000F39FB /* DVVoiceInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */; };
+		714E2D8B1D031E6800EB7CA0 /* DVLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 714E2D891D031E6800EB7CA0 /* DVLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,8 @@
 		5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5062B4C01D02FAD9000F39FB /* DVVoiceInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVVoiceInputManager.h; sourceTree = "<group>"; };
 		5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVVoiceInputManager.m; sourceTree = "<group>"; };
+		714E2D891D031E6800EB7CA0 /* DVLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVLoadingView.m; sourceTree = "<group>"; };
+		714E2D8A1D031E6800EB7CA0 /* DVLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVLoadingView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,8 @@
 		5062B4321D02D15B000F39FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				714E2D891D031E6800EB7CA0 /* DVLoadingView.m */,
+				714E2D8A1D031E6800EB7CA0 /* DVLoadingView.h */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 				5062B49D1D02DB0A000F39FB /* unzip.c in Sources */,
 				5062B4351D02D183000F39FB /* DVViewController.m in Sources */,
 				5062B49C1D02DB0A000F39FB /* mztools.c in Sources */,
+				714E2D8B1D031E6800EB7CA0 /* DVLoadingView.m in Sources */,
 				5062B4001D02C9C6000F39FB /* main.m in Sources */,
 				5062B4C21D02FAD9000F39FB /* DVVoiceInputManager.m in Sources */,
 				5062B4391D02D1D9000F39FB /* DVAIManager.m in Sources */,
@@ -656,6 +662,7 @@
 				5062B42A1D02C9C6000F39FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5062B42B1D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinciTests" */ = {
 			isa = XCConfigurationList;
@@ -664,6 +671,7 @@
 				5062B42D1D02C9C6000F39FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5062B42E1D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinciUITests" */ = {
 			isa = XCConfigurationList;
@@ -672,6 +680,7 @@
 				5062B4301D02C9C6000F39FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

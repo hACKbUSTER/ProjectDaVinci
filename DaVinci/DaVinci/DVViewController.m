@@ -9,6 +9,7 @@
 #import "DVViewController.h"
 #import "UIView+ViewFrameGeometry.h"
 #import "DVVoiceInputManager.h"
+#import "DVLoadingView.h"
 
 @interface DVViewController () <UIWebViewDelegate>
 {
@@ -18,6 +19,7 @@
 @property (strong, nonatomic) UIWebView *webView;
 @property (strong, nonatomic) UIView *customView;
 @property (strong, nonatomic) UILabel *customViewLabel;
+@property (strong, nonatomic) DVLoadingView *loadingView;
 
 @end
 
@@ -110,8 +112,10 @@
         self.webView.height = self.view.height - 50.0f;
     } completion:^(BOOL finished) {
         [self blinkAnimationForTitleLabel];
-        //[[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
-        //[[DVVoiceInputManager sharedManager] beginRecording:nil];
+        [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
+        [[DVVoiceInputManager sharedManager] beginRecording:nil];
+		
+		[self showLoadingView];
     }];
 }
 
@@ -131,6 +135,20 @@
         isShowingCustomView = NO;
         [_customViewLabel.layer removeAllAnimations];
     }];
+}
+
+- (void)showLoadingView
+{
+	_customViewLabel.hidden = TRUE;
+	_loadingView = [[DVLoadingView alloc] initWithMaxHeight:30 minHeight:8 width:5 minAlpha:0.2 spacing:5 color:[UIColor whiteColor]];
+	[_loadingView setCenter:CGPointMake(_customView.center.x, _customView.center.y + 8)];
+	[_customView addSubview:_loadingView];
+}
+
+- (void)hideLoadingView
+{
+	[_loadingView removeFromSuperview];
+	_customViewLabel.hidden = FALSE;
 }
 
 - (void)customViewTapped:(UITapGestureRecognizer *)gesture
