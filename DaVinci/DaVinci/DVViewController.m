@@ -78,7 +78,14 @@
 {
     [self hideLoadingView];
     NSDictionary *iFlyDic = [[notif userInfo] objectForKey:@"result"];
-    
+    NSString *text = [[[iFlyDic valueForKey:@"ws"] valueForKey:@"cw"] valueForKey:@"w"];
+    if ([text containsString:@"。"])
+    {
+        return;
+    }else
+    {
+        
+    }
     self.customViewLabel.text = @"你个贱人";
     [[DVVoiceInputManager sharedManager] startSpeakText:@"你个贱人"];
 }

@@ -118,7 +118,7 @@
 
 - (void) onResults:(NSArray *) results isLast:(BOOL)isLast
 {
-    if (isLast && [results count] > 0) {
+    if ([results count] > 0) {
         
         NSString *jsonStr = ((NSDictionary *)results[0]).allKeys[0];
         
