@@ -18,10 +18,12 @@ $playImg.click(function() {
 	if (playing) {
 		playing = false
 		$playImg.attr('src', 'img/play.png')
+		pauseAudio()
 	}
 	else {
 		playing = true
 		$playImg.attr('src', 'img/pause.png')
+		resumeAudio()
 	}
 })
 
@@ -83,6 +85,9 @@ function showControl() {
 	$slider.css('position', 'absolute')
 	$slider.css('top', $(window).height() - 160)
 	$slider.css('left', $(window).width() * 0.1)
+
+	$('.rangeslider--horizontal').css('width', $(window).width() * 0.8)
+	$('.rangeslider--horizontal').css('left', 0)
 }
 
 function showTitle() {
@@ -91,4 +96,10 @@ function showTitle() {
 
 function setTitleColor(color) {
 	$('#song-name').css('color', color)
+}
+
+function setSongInfo(name, musicUrl, coverUrl) {
+	setSongName(name)
+	playAudio(musicUrl)
+	setCoverImage(coverUrl)
 }

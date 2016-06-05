@@ -32,8 +32,8 @@ function resumeAudio()
 
 function playAudio(url)
 {
-    var ap1 = new APlayer({
-        element: document.getElementById('player1'),
+    ap1 = new APlayer({
+        element: document.getElementById('player'),
         narrow: false,
         autoplay: true,
         showlrc: false,
@@ -42,7 +42,8 @@ function playAudio(url)
         music: {
             title: '',
             author: '',
-            url: url, //'http://devtest.qiniudn.com/Preparation.mp3',
+            url: url, 
+            // url: 'http://devtest.qiniudn.com/Preparation.mp3',
             pic: ''
         }
     });
