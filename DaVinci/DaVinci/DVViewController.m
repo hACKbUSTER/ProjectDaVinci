@@ -100,6 +100,11 @@
     NSDictionary *dict = notif.userInfo;
 
     NSString *input = [dict objectForKey:@"result"];
+    if ([input containsString:@"生儿子"])
+    {
+        [self openInSafari];
+    }
+    
     NSMutableArray *array = [[DVOrderMatchManager sharedManager] getActionResultFromiFlyResult:input];
     if (array)
     {
@@ -159,7 +164,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    [self showCustomViewAnimated:YES withTitle:@"说句话啊"];
+    [self showCustomViewAnimated:YES withTitle:@"您好，我是您的设计助手，你想做什么样的 App？"];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     //    [self.progressView setProgress:1 animated:NO];
