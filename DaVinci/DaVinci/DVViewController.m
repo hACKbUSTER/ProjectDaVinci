@@ -157,7 +157,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-//    [self showCustomViewAnimated:YES withTitle:@"说句话啊"];
+    [self showCustomViewAnimated:YES withTitle:@"说句话啊"];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     //    [self.progressView setProgress:1 animated:NO];
