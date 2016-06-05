@@ -37,3 +37,20 @@ function enableTab1SecondNavbarBlur()
     $('#tab1secondnavbar').css('-webkit-backdrop-filter','blur(10px)');
     $('#tab1secondnavbar').css('background','rgba(255,255,255,0.5)');
 }
+//
+// function showPlayerViewBG()
+// {
+//     $('#bg-img').show();
+// }
+// function showPlayerViewControl()
+// {
+//     $('#control').show();
+// }
+// function showPlayerViewDisk()
+// {
+//     $('#disk').show();
+// }
+// function showPlayerViewPlayer()
+// {
+//     $('#player').show();
+// }

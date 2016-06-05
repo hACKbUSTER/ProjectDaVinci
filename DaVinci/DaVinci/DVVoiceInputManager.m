@@ -100,6 +100,7 @@
     if (error.errorCode == 0) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_speaker_completed" object:nil];
     }
+    [self beginRecording:self];
 }
 
 //合成开始

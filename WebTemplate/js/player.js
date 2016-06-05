@@ -64,6 +64,12 @@ function setDiskWidth(width) {
 	$coverImg.css('top', (width - innerDiskWidth)/2)
 	$coverImg.css('left', (width - innerDiskWidth)/2)
 }
+function ResizeDiskBig() {
+	setDiskWidth(0.9 * $(window).width());
+}
+function ResizeDiskSmall() {
+	setDiskWidth(0.7 * $(window).width());
+}
 
 function setNavigationBarColor(color) {
 	$('.navbar').css('background', color)
