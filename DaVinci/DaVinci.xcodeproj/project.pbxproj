@@ -41,6 +41,8 @@
 		5062B4C41D033E7F000F39FB /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4C31D033E7F000F39FB /* JavaScriptCore.framework */; };
 		5062B4C71D039FBA000F39FB /* DVNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4C61D039FBA000F39FB /* DVNetworkManager.m */; };
 		5062B4CA1D03AC88000F39FB /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4C91D03AC88000F39FB /* NSString+URL.m */; };
+		5062B4CD1D03B988000F39FB /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4CC1D03B988000F39FB /* GuideViewController.m */; };
+		5062B4D01D03BD80000F39FB /* ABCIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4CF1D03BD80000F39FB /* ABCIntroView.m */; };
 		714E2D8B1D031E6800EB7CA0 /* DVLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 714E2D891D031E6800EB7CA0 /* DVLoadingView.m */; };
 		9AB70DD90F1D230119C875B4 /* libPods-DaVinci.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1EBCEAC2791D47A2B8EEDE /* libPods-DaVinci.a */; };
 /* End PBXBuildFile section */
@@ -120,6 +122,10 @@
 		5062B4C61D039FBA000F39FB /* DVNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVNetworkManager.m; sourceTree = "<group>"; };
 		5062B4C81D03AC88000F39FB /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
 		5062B4C91D03AC88000F39FB /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		5062B4CB1D03B988000F39FB /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		5062B4CC1D03B988000F39FB /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		5062B4CE1D03BD80000F39FB /* ABCIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCIntroView.h; sourceTree = "<group>"; };
+		5062B4CF1D03BD80000F39FB /* ABCIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCIntroView.m; sourceTree = "<group>"; };
 		714E2D891D031E6800EB7CA0 /* DVLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVLoadingView.m; sourceTree = "<group>"; };
 		714E2D8A1D031E6800EB7CA0 /* DVLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVLoadingView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +250,8 @@
 			children = (
 				5062B4331D02D183000F39FB /* DVViewController.h */,
 				5062B4341D02D183000F39FB /* DVViewController.m */,
+				5062B4CB1D03B988000F39FB /* GuideViewController.h */,
+				5062B4CC1D03B988000F39FB /* GuideViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -276,6 +284,8 @@
 		5062B48E1D02DB04000F39FB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5062B4CE1D03BD80000F39FB /* ABCIntroView.h */,
+				5062B4CF1D03BD80000F39FB /* ABCIntroView.m */,
 				5062B4A51D02DEF0000F39FB /* UIView+ViewFrameGeometry.h */,
 				5062B4A61D02DEF0000F39FB /* UIView+ViewFrameGeometry.m */,
 				5062B48F1D02DB0A000F39FB /* minizip */,
@@ -520,6 +530,8 @@
 				5062B4C21D02FAD9000F39FB /* DVVoiceInputManager.m in Sources */,
 				5062B4391D02D1D9000F39FB /* DVAIManager.m in Sources */,
 				5062B49F1D02DB0A000F39FB /* ZipArchive.mm in Sources */,
+				5062B4CD1D03B988000F39FB /* GuideViewController.m in Sources */,
+				5062B4D01D03BD80000F39FB /* ABCIntroView.m in Sources */,
 				5062B49B1D02DB0A000F39FB /* ioapi.c in Sources */,
 				5062B4A71D02DEF0000F39FB /* UIView+ViewFrameGeometry.m in Sources */,
 			);
