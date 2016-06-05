@@ -291,4 +291,8 @@
 }
 */
 
+- (void)openInSafari {
+	[[UIApplication sharedApplication] openURL:[[NSURL alloc] initWithString:@"http://192.168.0.103:8081/"]];
+}
+
 @end
