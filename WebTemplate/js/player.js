@@ -38,12 +38,6 @@ var $nextBtnImg = $('#nextBtn img')
 $nextBtnImg.css('top', $(window).height() - 150)
 $nextBtnImg.css('left', $(window).width() * 3/4 - 50)
 
-showSlider()
-var $slider = $('#DVMusicSlider')
-$slider.css('position', 'absolute')
-$slider.css('top', $(window).height() - 160)
-$slider.css('left', $(window).width() * 0.1)
-
 function setSongName(name) {
 	document.getElementById('song-name').innerHTML = name
 }
@@ -67,4 +61,34 @@ function setDiskWidth(width) {
 	$coverImg.css('borderRadius', width * diskInnerOverOuter * 0.5)
 	$coverImg.css('top', (width - innerDiskWidth)/2)
 	$coverImg.css('left', (width - innerDiskWidth)/2)
+}
+
+function setNavigationBarColor(color) {
+	$('.navbar').css('background', color)
+	$('.navbar-inner').css('background', color)
+}
+
+function showBgImg() {
+	$('#bg-img').css('display', 'inline')
+}
+
+function showDisk() {
+	$('#disk').css('display', 'inline')
+}
+
+function showControl() {
+	showSlider()
+	$('#control').css('display', 'inline')
+	var $slider = $('#DVMusicSlider')
+	$slider.css('position', 'absolute')
+	$slider.css('top', $(window).height() - 160)
+	$slider.css('left', $(window).width() * 0.1)
+}
+
+function showTitle() {
+	$('#song-name').css('display', 'inline')
+}
+
+function setTitleColor(color) {
+	$('#song-name').css('color', color)
 }

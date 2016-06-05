@@ -63,7 +63,7 @@
                     </a>
                 </div>
                 <div class="center" style="line-height:22px;">
-                  <p id="song-name">Song Name</p>
+                  <p id="song-name" style="display:none;">Song Name</p>
                 </div>
                 <div class="right">
                     <a href="#" class="link">
@@ -78,14 +78,16 @@
           <div data-page="index" class="page">
             <!-- Scrollable page content -->
             <div class="page-content" id="board">
-              <img src="img/bg.jpg" id="bg-img" class="blur" style="height:120%;width:100%;transform:translateY(-50px);">
-              <div id="disk">
+              <img src="img/bg.jpg" id="bg-img" class="blur" style="height:120%;width:100%;transform:translateY(-50px);display:none;">
+              <div id="disk" style="display:none;">
                 <img src="img/disk.png">
                 <img src="img/bg.jpg" id="cover-img" style="position:absolute;top:100px;left:100px;">
               </div>
-              <div id="playBtn"></div>
-              <div id="lastBtn"></div>
-              <div id="nextBtn"></div>
+              <div id="control" style="display:none;">
+                <div id="playBtn"></div>
+                <div id="lastBtn"></div>
+                <div id="nextBtn"></div>
+              </div>
               <div id="player" class="aplayer" style="display: None">
             </div>
           </div>
