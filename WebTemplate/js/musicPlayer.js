@@ -85,8 +85,6 @@ function showSlider()
         return;
     }
 
-    ap1.init();
-
     var board = document.getElementById("board");
     var t = document.createElement("div");
     t.setAttribute("style", "top:100px;position:relative");

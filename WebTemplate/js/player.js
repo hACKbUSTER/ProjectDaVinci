@@ -94,6 +94,7 @@ function showControl() {
 
 	$('.rangeslider--horizontal').css('width', $(window).width() * 0.8)
 	$('.rangeslider--horizontal').css('left', 0)
+	$('#tabbar').hide();
 }
 
 function showTitle() {

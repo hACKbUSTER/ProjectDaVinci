@@ -1,4 +1,5 @@
-<div data-page="player" class="page navbar-fixed toolbar-fixed">
+
+
 <link rel="stylesheet" href="css/rangeslider.css">
 <link rel="canonical" href="http://rangeslider.js.org/">
 <link rel="stylesheet" href="css/APlayer.min.css">
@@ -26,42 +27,41 @@
   }
 </style>
 
-<script type="text/javascript" src="js/jQueryRotate.js"></script>
-<script src="js/APlayer.min.js"></script>
-<script src="js/rangeslider.min.js"></script>
-<script src="js/musicPlayer.js"></script>
-<script type="text/javascript" src="js/player.js"></script>
-
 <div class="navbar" style="background:transparent;">
   <div class="navbar-inner" style="background:transparent;color:white;">
     <div class="left">
-      <a href="#" class="link">
-        <i class="icon icon-back"></i>
-      </a>
+      <!--<a href="#" class="link">-->
+        <!--<i class="icon icon-back"></i>-->
+      <!--</a>-->
     </div>
     <div class="center" style="line-height:22px;">
       <p id="song-name" style="display:none;">Song Name</p>
     </div>
     <div class="right">
-      <a href="#" class="link">
-        <i class="icon icon-bars"></i>
-      </a>
+      <!--<a href="#" class="link">-->
+        <!--<i class="icon icon-bars"></i>-->
+      <!--</a>-->
     </div>
   </div>
 </div>
 <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-<div class="page-content">
-  <img src="img/bg.jpg" id="bg-img" class="blur" style="height:120%;width:100%;transform:translateY(-50px);display:none;">
-  <div id="disk" style="display:none;">
-    <img src="img/disk.png">
-    <img src="img/bg.jpg" id="cover-img" style="position:absolute;top:100px;left:100px;">
+<div class="pages navbar-through" id="board">
+  <div data-page="index-3" class="page">
+    <img src="img/bg.jpg" id="bg-img" class="blur" style="height:120%;width:100%;transform:translateY(-50px);display:none;">
+    <div id="disk" style="display:none;">
+      <img src="img/disk.png">
+      <img src="img/bg.jpg" id="cover-img" style="position:absolute;top:100px;left:100px;">
+    </div>
+    <div id="control" style="display:none;">
+      <div id="playBtn"></div>
+      <div id="lastBtn"></div>
+      <div id="nextBtn"></div>
+    </div>
+    <div id="player" class="aplayer" style="display: None">
+    </div>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script src="js/APlayer.min.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/musicPlayer.js"></script>
   </div>
-  <div id="control" style="display:none;">
-    <div id="playBtn"></div>
-    <div id="lastBtn"></div>
-    <div id="nextBtn"></div>
-  </div>
-  <div id="player" class="aplayer" style="display: None">
-  </div>
-</div>
 </div>
