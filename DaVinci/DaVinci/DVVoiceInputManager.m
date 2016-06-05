@@ -100,7 +100,6 @@
     if (error.errorCode == 0) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_speaker_completed" object:nil];
     }
-    [self beginRecording:self];
 }
 
 //合成开始
@@ -116,9 +115,9 @@
 //合成播放进度
 - (void) onSpeakProgress:(int) progress
 {
-//    if (progress >= 1) {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"dv_speaker_completed" object:nil];
-//    }
+    if (progress >= 1) {
+//        [self beginRecording:self];
+    }
 }
 
 - (void) onError:(IFlySpeechError *) errorCode
@@ -127,6 +126,10 @@
     if (errorCode.errorCode == 0) {
         [self beginRecording:nil];
 //        [_iFlySpeechUnderstander destroy];
+    } else if (errorCode.errorCode == 20002 || errorCode.errorCode == 10114) {
+        [self initSpeechUnderstander];
+        [self initSpeaker];
+        [self beginRecording:nil];
     }
 }
 
