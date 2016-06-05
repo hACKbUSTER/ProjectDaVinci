@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F7E7E2F9B9C42FB4C73455 /* libPods-DaVinciUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91920F2F6105826ADB8FFD28 /* libPods-DaVinciUITests.a */; };
 		0DB90E1E1D03704900D900C6 /* DVOrderMatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB90E1D1D03704900D900C6 /* DVOrderMatchManager.m */; };
 		0DB90E221D03993F00D900C6 /* DVOrderMatchJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DB90E1F1D0379EB00D900C6 /* DVOrderMatchJSON.json */; };
+		2F52DC11692D30BC2EB6733F /* libPods-DaVinci.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 404E2DFF09041014DB0E97D5 /* libPods-DaVinci.a */; };
 		5062B4001D02C9C6000F39FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B3FF1D02C9C6000F39FB /* main.m */; };
 		5062B4031D02C9C6000F39FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4021D02C9C6000F39FB /* AppDelegate.m */; };
 		5062B4091D02C9C6000F39FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062B4071D02C9C6000F39FB /* Main.storyboard */; };
@@ -44,7 +46,7 @@
 		5062B4CD1D03B988000F39FB /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4CC1D03B988000F39FB /* GuideViewController.m */; };
 		5062B4D01D03BD80000F39FB /* ABCIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4CF1D03BD80000F39FB /* ABCIntroView.m */; };
 		714E2D8B1D031E6800EB7CA0 /* DVLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 714E2D891D031E6800EB7CA0 /* DVLoadingView.m */; };
-		9AB70DD90F1D230119C875B4 /* libPods-DaVinci.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1EBCEAC2791D47A2B8EEDE /* libPods-DaVinci.a */; };
+		C4CA167F31E8237D04A94F6F /* libPods-DaVinciTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB66273BF2C8353A58C66E53 /* libPods-DaVinciTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,9 +70,10 @@
 		0DB90E1C1D03704900D900C6 /* DVOrderMatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVOrderMatchManager.h; sourceTree = "<group>"; };
 		0DB90E1D1D03704900D900C6 /* DVOrderMatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVOrderMatchManager.m; sourceTree = "<group>"; };
 		0DB90E1F1D0379EB00D900C6 /* DVOrderMatchJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DVOrderMatchJSON.json; sourceTree = "<group>"; };
-		0FB6BD9404A7727D2C62F566 /* Pods-DaVinci.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinci.release.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci.release.xcconfig"; sourceTree = "<group>"; };
-		14647EDCEF717FD88633C081 /* Pods-DaVinci.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinci.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci.debug.xcconfig"; sourceTree = "<group>"; };
-		2A1EBCEAC2791D47A2B8EEDE /* libPods-DaVinci.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DaVinci.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10EFC7CDB5EF3DC235E46BC0 /* Pods-DaVinciTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinciTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinciTests/Pods-DaVinciTests.release.xcconfig"; sourceTree = "<group>"; };
+		39AF68A1C3A9FD296A50051E /* Pods-DaVinci.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinci.release.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci.release.xcconfig"; sourceTree = "<group>"; };
+		3C198584EF7E68407CA13863 /* Pods-DaVinciTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinciTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinciTests/Pods-DaVinciTests.debug.xcconfig"; sourceTree = "<group>"; };
+		404E2DFF09041014DB0E97D5 /* libPods-DaVinci.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DaVinci.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5062B3FB1D02C9C6000F39FB /* DaVinci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaVinci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5062B3FF1D02C9C6000F39FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5062B4011D02C9C6000F39FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +131,11 @@
 		5062B4CF1D03BD80000F39FB /* ABCIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCIntroView.m; sourceTree = "<group>"; };
 		714E2D891D031E6800EB7CA0 /* DVLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVLoadingView.m; sourceTree = "<group>"; };
 		714E2D8A1D031E6800EB7CA0 /* DVLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVLoadingView.h; sourceTree = "<group>"; };
+		770607AB23A4564ABBD2CF9A /* Pods-DaVinci.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinci.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci.debug.xcconfig"; sourceTree = "<group>"; };
+		7DF47F5422DEC26741FFA778 /* Pods-DaVinciUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinciUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinciUITests/Pods-DaVinciUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		91920F2F6105826ADB8FFD28 /* libPods-DaVinciUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DaVinciUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADF1DB86DDC67F8925ED143 /* Pods-DaVinciUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinciUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinciUITests/Pods-DaVinciUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB66273BF2C8353A58C66E53 /* libPods-DaVinciTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DaVinciTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +156,7 @@
 				5062B4AD1D02FA5F000F39FB /* CoreLocation.framework in Frameworks */,
 				5062B4A11D02DB53000F39FB /* libz.tbd in Frameworks */,
 				5062B4AB1D02FA4D000F39FB /* iflyMSC.framework in Frameworks */,
-				9AB70DD90F1D230119C875B4 /* libPods-DaVinci.a in Frameworks */,
+				2F52DC11692D30BC2EB6733F /* libPods-DaVinci.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CA167F31E8237D04A94F6F /* libPods-DaVinciTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,21 +172,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F7E7E2F9B9C42FB4C73455 /* libPods-DaVinciUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E3DF33DC6D149868ED61A5E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				14647EDCEF717FD88633C081 /* Pods-DaVinci.debug.xcconfig */,
-				0FB6BD9404A7727D2C62F566 /* Pods-DaVinci.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5062B3F21D02C9C6000F39FB = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +187,7 @@
 				5062B4171D02C9C6000F39FB /* DaVinciTests */,
 				5062B4221D02C9C6000F39FB /* DaVinciUITests */,
 				5062B3FC1D02C9C6000F39FB /* Products */,
-				3E3DF33DC6D149868ED61A5E /* Pods */,
+				89917DB7CDEE39A574839699 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -329,9 +330,24 @@
 				5062B4AC1D02FA5F000F39FB /* CoreLocation.framework */,
 				5062B4AA1D02FA4D000F39FB /* iflyMSC.framework */,
 				5062B4A01D02DB53000F39FB /* libz.tbd */,
-				2A1EBCEAC2791D47A2B8EEDE /* libPods-DaVinci.a */,
+				404E2DFF09041014DB0E97D5 /* libPods-DaVinci.a */,
+				BB66273BF2C8353A58C66E53 /* libPods-DaVinciTests.a */,
+				91920F2F6105826ADB8FFD28 /* libPods-DaVinciUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89917DB7CDEE39A574839699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				770607AB23A4564ABBD2CF9A /* Pods-DaVinci.debug.xcconfig */,
+				39AF68A1C3A9FD296A50051E /* Pods-DaVinci.release.xcconfig */,
+				3C198584EF7E68407CA13863 /* Pods-DaVinciTests.debug.xcconfig */,
+				10EFC7CDB5EF3DC235E46BC0 /* Pods-DaVinciTests.release.xcconfig */,
+				7DF47F5422DEC26741FFA778 /* Pods-DaVinciUITests.debug.xcconfig */,
+				BADF1DB86DDC67F8925ED143 /* Pods-DaVinciUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,12 +357,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5062B4281D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinci" */;
 			buildPhases = (
-				A5FB6FDE531A667D79B69AB9 /* Check Pods Manifest.lock */,
+				91A755FC48D4D28ACB249F6D /* 📦 Check Pods Manifest.lock */,
 				5062B3F71D02C9C6000F39FB /* Sources */,
 				5062B3F81D02C9C6000F39FB /* Frameworks */,
 				5062B3F91D02C9C6000F39FB /* Resources */,
-				CC7038ECFB0103FC8D88C92A /* Embed Pods Frameworks */,
-				EAB15AB27EEA3616D3DE7464 /* Copy Pods Resources */,
+				9D460D2A817DFD6673FF7DA4 /* 📦 Embed Pods Frameworks */,
+				38DF5CA1196AD96CD1FC5CD9 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,9 +377,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5062B42B1D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinciTests" */;
 			buildPhases = (
+				1DE28E7873FDE5200D0E7EA6 /* 📦 Check Pods Manifest.lock */,
 				5062B4101D02C9C6000F39FB /* Sources */,
 				5062B4111D02C9C6000F39FB /* Frameworks */,
 				5062B4121D02C9C6000F39FB /* Resources */,
+				3582744ABB5C89AA71F1D1FB /* 📦 Embed Pods Frameworks */,
+				119945E010C8B1D392A154ED /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -379,9 +398,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5062B42E1D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinciUITests" */;
 			buildPhases = (
+				2CB1B958D97B222964AC115D /* 📦 Check Pods Manifest.lock */,
 				5062B41B1D02C9C6000F39FB /* Sources */,
 				5062B41C1D02C9C6000F39FB /* Frameworks */,
 				5062B41D1D02C9C6000F39FB /* Resources */,
+				48E7F387C5357E1F4BD0B6F1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -465,14 +486,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A5FB6FDE531A667D79B69AB9 /* Check Pods Manifest.lock */ = {
+		119945E010C8B1D392A154ED /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaVinciTests/Pods-DaVinciTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DE28E7873FDE5200D0E7EA6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,34 +516,94 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CC7038ECFB0103FC8D88C92A /* Embed Pods Frameworks */ = {
+		2CB1B958D97B222964AC115D /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		EAB15AB27EEA3616D3DE7464 /* Copy Pods Resources */ = {
+		3582744ABB5C89AA71F1D1FB /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaVinciTests/Pods-DaVinciTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38DF5CA1196AD96CD1FC5CD9 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48E7F387C5357E1F4BD0B6F1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaVinciUITests/Pods-DaVinciUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91A755FC48D4D28ACB249F6D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D460D2A817DFD6673FF7DA4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -672,7 +768,7 @@
 		};
 		5062B4291D02C9C6000F39FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14647EDCEF717FD88633C081 /* Pods-DaVinci.debug.xcconfig */;
+			baseConfigurationReference = 770607AB23A4564ABBD2CF9A /* Pods-DaVinci.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -689,7 +785,7 @@
 		};
 		5062B42A1D02C9C6000F39FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FB6BD9404A7727D2C62F566 /* Pods-DaVinci.release.xcconfig */;
+			baseConfigurationReference = 39AF68A1C3A9FD296A50051E /* Pods-DaVinci.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -706,6 +802,7 @@
 		};
 		5062B42C1D02C9C6000F39FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C198584EF7E68407CA13863 /* Pods-DaVinciTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DaVinciTests/Info.plist;
@@ -718,6 +815,7 @@
 		};
 		5062B42D1D02C9C6000F39FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10EFC7CDB5EF3DC235E46BC0 /* Pods-DaVinciTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DaVinciTests/Info.plist;
@@ -730,6 +828,7 @@
 		};
 		5062B42F1D02C9C6000F39FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF47F5422DEC26741FFA778 /* Pods-DaVinciUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DaVinciUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -741,6 +840,7 @@
 		};
 		5062B4301D02C9C6000F39FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADF1DB86DDC67F8925ED143 /* Pods-DaVinciUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DaVinciUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

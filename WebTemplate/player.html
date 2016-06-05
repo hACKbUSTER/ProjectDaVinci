@@ -1,105 +1,67 @@
-<html>
-  <head>
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <!-- Your app title -->
-    <title>My App</title>
-    <!-- Path to Framework7 iOS CSS theme styles-->
-    <script src="http://cdn.bootcss.com/jquery/2.2.2/jquery.js"></script>
-    <link rel="stylesheet" href="css/rangeslider.css">
-    <link rel="stylesheet" href="css/framework7.ios.css">
-    <!-- Path to Framework7 iOS related color styles -->
-    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
-    <link rel="canonical" href="http://rangeslider.js.org/">
-    <link rel="stylesheet" href="css/APlayer.min.css">
+<div data-page="player" class="page navbar-fixed toolbar-fixed">
+<link rel="stylesheet" href="css/rangeslider.css">
+<link rel="canonical" href="http://rangeslider.js.org/">
+<link rel="stylesheet" href="css/APlayer.min.css">
 
-    <style type="text/css">
-      .page-content {
-        overflow: hidden;
-      }
-      .blur {
-        -webkit-filter: blur(5px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(10px);
-        background-color: #ccc;
-      }
-      .icon-back svg {
-        fill: white;
-      }
-      #disk {
-        position: absolute;
-      }
-      #disk img {
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Status bar overlay for full screen mode (PhoneGap) -->
-    <div class="statusbar-overlay"></div>
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
-      <div class="content-block">
-        <p>Left panel content goes here</p>
-      </div>
+<style type="text/css">
+  .page-content {
+    overflow: hidden;
+  }
+  .blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(10px);
+    background-color: #ccc;
+  }
+  .icon-back svg {
+    fill: white;
+  }
+  #disk {
+    position: absolute;
+  }
+  #disk img {
+    width: 100%;
+  }
+</style>
+
+<script type="text/javascript" src="js/jQueryRotate.js"></script>
+<script src="js/APlayer.min.js"></script>
+<script src="js/rangeslider.min.js"></script>
+<script src="js/musicPlayer.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+
+<div class="navbar" style="background:transparent;">
+  <div class="navbar-inner" style="background:transparent;color:white;">
+    <div class="left">
+      <a href="#" class="link">
+        <i class="icon icon-back"></i>
+      </a>
     </div>
-    <!-- Views -->
-    <div class="views">
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Top Navbar-->
-        <div class="navbar" style="background:transparent;">
-            <div class="navbar-inner" style="background:transparent;color:white;">
-                <div class="left">
-                    <a href="#" class="link">
-                        <i class="icon icon-back"></i>
-                    </a>
-                </div>
-                <div class="center" style="line-height:22px;">
-                  <p id="song-name" style="display:none;">Song Name</p>
-                </div>
-                <div class="right">
-                    <a href="#" class="link">
-                        <i class="icon icon-bars"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages navbar-through toolbar-through">
-          <!-- Page, "data-page" contains page name -->
-          <div data-page="index" class="page">
-            <!-- Scrollable page content -->
-            <div class="page-content" id="board">
-              <img src="img/bg.jpg" id="bg-img" class="blur" style="height:120%;width:100%;transform:translateY(-50px);display:none;">
-              <div id="disk" style="display:none;">
-                <img src="img/disk.png">
-                <img src="img/bg.jpg" id="cover-img" style="position:absolute;top:100px;left:100px;">
-              </div>
-              <div id="control" style="display:none;">
-                <div id="playBtn"></div>
-                <div id="lastBtn"></div>
-                <div id="nextBtn"></div>
-              </div>
-              <div id="player" class="aplayer" style="display: None">
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="center" style="line-height:22px;">
+      <p id="song-name" style="display:none;">Song Name</p>
     </div>
-    <!-- Path to Framework7 Library JS-->
-    <script type="text/javascript" src="js/framework7.js"></script>
-    <script type="text/javascript" src="js/jQueryRotate.js"></script>
-    <script src="js/APlayer.min.js"></script>
-    <script src="js/rangeslider.min.js"></script>
-    <script src="js/musicPlayer.js"></script>
-    <script type="text/javascript" src="js/player.js"></script>
-  </body>
-</html>   
+    <div class="right">
+      <a href="#" class="link">
+        <i class="icon icon-bars"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+<div class="page-content">
+  <img src="img/bg.jpg" id="bg-img" class="blur" style="height:120%;width:100%;transform:translateY(-50px);display:none;">
+  <div id="disk" style="display:none;">
+    <img src="img/disk.png">
+    <img src="img/bg.jpg" id="cover-img" style="position:absolute;top:100px;left:100px;">
+  </div>
+  <div id="control" style="display:none;">
+    <div id="playBtn"></div>
+    <div id="lastBtn"></div>
+    <div id="nextBtn"></div>
+  </div>
+  <div id="player" class="aplayer" style="display: None">
+  </div>
+</div>
+</div>
