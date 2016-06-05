@@ -19,7 +19,5 @@
 @property UIColor *color;
 
 - (id) initWithMaxHeight: (CGFloat) maxHeight minHeight: (CGFloat) minHeight width: (CGFloat) width minAlpha: (CGFloat) minAlpha spacing: (CGFloat) spacing color: (UIColor*) color;
-- (void) hide;
-- (void) show;
 
 @end

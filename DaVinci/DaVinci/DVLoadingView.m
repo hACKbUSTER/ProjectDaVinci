@@ -53,28 +53,22 @@
 - (void) setUpAnimation {
 	for (int i = 0; i < _bars.count; i ++) {
 		UIView *bar = _bars[i];
-		[self animateBar:bar to:_maxHeight];
+		[self animateBar:bar with:(NSTimeInterval)i * 0.1];
 	}
 }
 
-- (void) animateBar: (UIView*) bar to: (CGFloat) targetHeight {
-	CGFloat distance = fabsf((float)(targetHeight - bar.frame.size.height));
-	CGFloat speed = 35;
-	[UIView animateWithDuration:(NSTimeInterval)(distance/speed) delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-		[self setBar:bar to:targetHeight];
-		if (fabsf((float)(targetHeight - _maxHeight)) < 1) {
+- (void) animateBar: (UIView*) bar with: (NSTimeInterval) delay {
+	[UIView animateWithDuration:0.5 delay:delay options:UIViewAnimationOptionCurveEaseInOut animations:^{
+		if (bar.frame.size.height < _maxHeight - 1.0) {
+			[self setBar:bar to:_maxHeight];
 			[bar setAlpha:1];
 		}
 		else {
+			[self setBar:bar to:_minHeight];
 			[bar setAlpha:_minAlpha];
 		}
 	} completion:^(BOOL finished){
-		if (fabsf((float)(targetHeight - _maxHeight)) < 1) {
-			[self animateBar:bar to:_minHeight];
-		}
-		else {
-			[self animateBar:bar to:_maxHeight];
-		}
+		[self animateBar:bar with:0];
 	}];
 }
 
@@ -84,14 +78,6 @@
 	frame.size.height = height;
 	[bar setFrame:frame];
 	[bar setCenter:center];
-}
-
-- (void) hide {
-	self.hidden = TRUE;
-}
-
-- (void) show {
-	self.hidden = FALSE;
 }
 
 @end
