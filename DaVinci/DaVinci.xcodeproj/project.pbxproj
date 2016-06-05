@@ -28,7 +28,6 @@
 		5062B4A11D02DB53000F39FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4A01D02DB53000F39FB /* libz.tbd */; };
 		5062B4A41D02DC5A000F39FB /* resource.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5062B4A31D02DC5A000F39FB /* resource.zip */; };
 		5062B4A71D02DEF0000F39FB /* UIView+ViewFrameGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4A61D02DEF0000F39FB /* UIView+ViewFrameGeometry.m */; };
-		5062B4AB1D02FA4D000F39FB /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4AA1D02FA4D000F39FB /* iflyMSC.framework */; };
 		5062B4AD1D02FA5F000F39FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4AC1D02FA5F000F39FB /* CoreLocation.framework */; };
 		5062B4AF1D02FA65000F39FB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4AE1D02FA65000F39FB /* CoreTelephony.framework */; };
 		5062B4B11D02FA6C000F39FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4B01D02FA6C000F39FB /* AVFoundation.framework */; };
@@ -45,6 +44,7 @@
 		5062B4CA1D03AC88000F39FB /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4C91D03AC88000F39FB /* NSString+URL.m */; };
 		5062B4CD1D03B988000F39FB /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4CC1D03B988000F39FB /* GuideViewController.m */; };
 		5062B4D01D03BD80000F39FB /* ABCIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4CF1D03BD80000F39FB /* ABCIntroView.m */; };
+		5062B4D21D03CFBB000F39FB /* iflyMSC in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4D11D03CFBB000F39FB /* iflyMSC */; };
 		714E2D8B1D031E6800EB7CA0 /* DVLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 714E2D891D031E6800EB7CA0 /* DVLoadingView.m */; };
 		C4CA167F31E8237D04A94F6F /* libPods-DaVinciTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB66273BF2C8353A58C66E53 /* libPods-DaVinciTests.a */; };
 /* End PBXBuildFile section */
@@ -107,7 +107,6 @@
 		5062B4A31D02DC5A000F39FB /* resource.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = resource.zip; sourceTree = "<group>"; };
 		5062B4A51D02DEF0000F39FB /* UIView+ViewFrameGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewFrameGeometry.h"; sourceTree = "<group>"; };
 		5062B4A61D02DEF0000F39FB /* UIView+ViewFrameGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewFrameGeometry.m"; sourceTree = "<group>"; };
-		5062B4AA1D02FA4D000F39FB /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		5062B4AC1D02FA5F000F39FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5062B4AE1D02FA65000F39FB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		5062B4B01D02FA6C000F39FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +128,7 @@
 		5062B4CC1D03B988000F39FB /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		5062B4CE1D03BD80000F39FB /* ABCIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCIntroView.h; sourceTree = "<group>"; };
 		5062B4CF1D03BD80000F39FB /* ABCIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCIntroView.m; sourceTree = "<group>"; };
+		5062B4D11D03CFBB000F39FB /* iflyMSC */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = iflyMSC; path = iflyMSC.framework/iflyMSC; sourceTree = "<group>"; };
 		714E2D891D031E6800EB7CA0 /* DVLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVLoadingView.m; sourceTree = "<group>"; };
 		714E2D8A1D031E6800EB7CA0 /* DVLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVLoadingView.h; sourceTree = "<group>"; };
 		770607AB23A4564ABBD2CF9A /* Pods-DaVinci.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinci.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,9 +153,9 @@
 				5062B4B31D02FA71000F39FB /* AddressBook.framework in Frameworks */,
 				5062B4B11D02FA6C000F39FB /* AVFoundation.framework in Frameworks */,
 				5062B4AF1D02FA65000F39FB /* CoreTelephony.framework in Frameworks */,
+				5062B4D21D03CFBB000F39FB /* iflyMSC in Frameworks */,
 				5062B4AD1D02FA5F000F39FB /* CoreLocation.framework in Frameworks */,
 				5062B4A11D02DB53000F39FB /* libz.tbd in Frameworks */,
-				5062B4AB1D02FA4D000F39FB /* iflyMSC.framework in Frameworks */,
 				2F52DC11692D30BC2EB6733F /* libPods-DaVinci.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +317,7 @@
 		5062B4A21D02DB58000F39FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5062B4D11D03CFBB000F39FB /* iflyMSC */,
 				5062B4C31D033E7F000F39FB /* JavaScriptCore.framework */,
 				5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */,
 				5062B4BC1D02FA90000F39FB /* UIKit.framework */,
@@ -328,7 +329,6 @@
 				5062B4B01D02FA6C000F39FB /* AVFoundation.framework */,
 				5062B4AE1D02FA65000F39FB /* CoreTelephony.framework */,
 				5062B4AC1D02FA5F000F39FB /* CoreLocation.framework */,
-				5062B4AA1D02FA4D000F39FB /* iflyMSC.framework */,
 				5062B4A01D02DB53000F39FB /* libz.tbd */,
 				404E2DFF09041014DB0E97D5 /* libPods-DaVinci.a */,
 				BB66273BF2C8353A58C66E53 /* libPods-DaVinciTests.a */,
@@ -778,6 +778,10 @@
 				);
 				INFOPLIST_FILE = DaVinci/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyMSC.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinci;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -795,6 +799,10 @@
 				);
 				INFOPLIST_FILE = DaVinci/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyMSC.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = buster.hack.DaVinci;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
