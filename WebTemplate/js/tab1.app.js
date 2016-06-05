@@ -11,3 +11,29 @@ $(document).ready(function () {
             autoHeight:true
         })
 });
+
+function showTab1Navbar()
+{
+    $('#tab1navbar').show();
+}
+
+function showTab1SecondNavbar()
+{
+    $('#tab1secondnavbar').show();
+}
+
+function showTab1PlayView()
+{
+    $('#tab1musicselection').show();
+}
+
+function showTab1BannerView()
+{
+    $('#tab1playview').show();
+}
+
+function enableTab1SecondNavbarBlur()
+{
+    $('#tab1secondnavbar').css('-webkit-backdrop-filter','blur(10px)');
+    $('#tab1secondnavbar').css('background','rgba(255,255,255,0.5)');
+}

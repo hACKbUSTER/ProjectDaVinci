@@ -1,4 +1,4 @@
-<div class="navbar" style="background: rgb(210, 61, 57);">
+<div id="tab1navbar" class="navbar" style="background: rgb(210, 61, 57);display: none;">
     <div class="navbar-inner">
         <div class="left">
             <a href="#" class="link icon-only open-panel"> <i class="icon icon-micphone"></i></a>
@@ -14,14 +14,15 @@
                 <a href="#" class="searchbar-cancel">Cancel</a>
             </form>
             <!-- Search Bar overlay-->
+            <!--<a href="player.html" class="searchbar-overlay"></a>-->
             <div class="searchbar-overlay"></div>
         </div>
         <div class="right">
-            <a href="#" class="link icon-only open-panel"> <i class="icon icon-playerview"></i></a>
+            <a href="player.html" class="link icon-only open-panel"> <i class="icon icon-playerview"></i></a>
         </div>
     </div>
 </div>
-<div class="navbar" style="background: rgba(255,255,255,0.5);-webkit-backdrop-filter:blur(10px);top: 44px;height: 36px">
+<div id="tab1secondnavbar" class="navbar" style="top: 44px;height: 36px;display: none;">
     <div class="row" style="height: 36px; ">
         <!-- Each "cell" has col-[widht in percents] class -->
         <div class="col-25"><p style="text-align: center;font-size: 10px; line-height: inherit;">个性推荐</p></div>
@@ -30,7 +31,7 @@
         <div class="col-25"><p style="text-align: center;font-size: 10px;line-height: inherit;">排行榜</p></div>
     </div>
 </div>
-<div class="pages navbar-fixed">
+<div id="tab1playview" class="pages navbar-fixed" style="display: none;">
     <div data-page="home-1" class="page">
         <div class="page-content" style="background: white">
             <div class="navbar" style="width: 100%;height: 36px; background: white;"></div>
@@ -57,38 +58,40 @@
             <div class="row">
                 <img src="img/threeButton.jpg" style="width: 100%">
             </div>
-            <div class="row" style="padding: 10px">
-                <div class="col-33">
-                    <img style="width: 100%" src="http://p4.music.126.net/hMbfo8Vu38cRyTyBOYntFg==/1369991499475710.jpg?param=512y512">
-                    <p style="margin: 0px">STREET</p>
-                    <p style="margin: 0px; font-size: 10px;color: gray;">EXID</p>
+            <div id="tab1musicselection" style="display: none;">
+                <div class="row" style="padding: 10px">
+                    <div class="col-33">
+                        <img style="width: 100%" src="http://p4.music.126.net/hMbfo8Vu38cRyTyBOYntFg==/1369991499475710.jpg?param=512y512">
+                        <p style="margin: 0px">STREET</p>
+                        <p style="margin: 0px; font-size: 10px;color: gray;">EXID</p>
+                    </div>
+                    <div class="col-33">
+                        <img style="width: 100%" src="http://p3.music.126.net/emAgx1BQzERwxNSjcYlIgA==/1410673427960637.jpg?param=512y512">
+                        <p style="margin: 0px">I Still Do</p>
+                        <p style="margin: 0px; font-size: 10px;color: gray;">Eric Clapton</p>
+                    </div>
+                    <div class="col-33">
+                        <img style="width: 100%" src="http://p3.music.126.net/4-BpbXUPFi7FdyFW4XPjdg==/3426078233753577.jpg?param=512y512">
+                        <p style="margin: 0px">Plus One / TIME</p>
+                        <p style="margin: 0px; font-size: 10px;color: gray;">平井堅</p>
+                    </div>
                 </div>
-                <div class="col-33">
-                    <img style="width: 100%" src="http://p3.music.126.net/emAgx1BQzERwxNSjcYlIgA==/1410673427960637.jpg?param=512y512">
-                    <p style="margin: 0px">I Still Do</p>
-                    <p style="margin: 0px; font-size: 10px;color: gray;">Eric Clapton</p>
-                </div>
-                <div class="col-33">
-                    <img style="width: 100%" src="http://p3.music.126.net/4-BpbXUPFi7FdyFW4XPjdg==/3426078233753577.jpg?param=512y512">
-                    <p style="margin: 0px">Plus One / TIME</p>
-                    <p style="margin: 0px; font-size: 10px;color: gray;">平井堅</p>
-                </div>
-            </div>
-            <div class="row" style="padding: 10px">
-                <div class="col-33">
-                    <img style="width: 100%" src="http://p3.music.126.net/Cj7NqtfKxV8lmat8EEoY_g==/1380986613897369.jpg?param=512y512">
-                    <p style="margin: 0px">初学者</p>
-                    <p style="margin: 0px; font-size: 10px;color: gray;">薛之谦</p>
-                </div>
-                <div class="col-33">
-                    <img style="width: 100%" src="http://p4.music.126.net/aDQCoIx1yDQdkF6FSuRLTA==/1384285148178141.jpg?param=512y512">
-                    <p style="margin: 0px">CAN'T STOP THE FEELING! </p>
-                    <p style="margin: 0px; font-size: 10px;color: gray;">Justin Timberlake</p>
-                </div>
-                <div class="col-33">
-                    <img style="width: 100%" src="http://p3.music.126.net/DsvRKikXiHQ9t2bCvyAWZw==/1384285147405931.jpg?param=512y512">
-                    <p style="margin: 0px">Wherever I Go</p>
-                    <p style="margin: 0px; font-size: 10px;color: gray;">OneRepublic</p>
+                <div class="row" style="padding: 10px">
+                    <div class="col-33">
+                        <img style="width: 100%" src="http://p3.music.126.net/Cj7NqtfKxV8lmat8EEoY_g==/1380986613897369.jpg?param=512y512">
+                        <p style="margin: 0px">初学者</p>
+                        <p style="margin: 0px; font-size: 10px;color: gray;">薛之谦</p>
+                    </div>
+                    <div class="col-33">
+                        <img style="width: 100%" src="http://p4.music.126.net/aDQCoIx1yDQdkF6FSuRLTA==/1384285148178141.jpg?param=512y512">
+                        <p style="margin: 0px">CAN'T STOP THE FEELING! </p>
+                        <p style="margin: 0px; font-size: 10px;color: gray;">Justin Timberlake</p>
+                    </div>
+                    <div class="col-33">
+                        <img style="width: 100%" src="http://p3.music.126.net/DsvRKikXiHQ9t2bCvyAWZw==/1384285147405931.jpg?param=512y512">
+                        <p style="margin: 0px">Wherever I Go</p>
+                        <p style="margin: 0px; font-size: 10px;color: gray;">OneRepublic</p>
+                    </div>
                 </div>
             </div>
         </div>

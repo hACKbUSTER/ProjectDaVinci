@@ -110,7 +110,9 @@
         [self.webView stringByEvaluatingJavaScriptFromString:array[1]];
     }else
     {
+        [self hideLoadingView];
         self.customViewLabel.text = input;
+        [_inputManager startSpeakText:input];
     }
 
 }

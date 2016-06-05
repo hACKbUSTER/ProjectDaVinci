@@ -3,12 +3,13 @@
                    {
                    "底部栏目":["好的，您需要新添加底部栏目么","toggleTabbar(true);"],
                    "底栏": ["好的，您需要新添加底部栏目么","toggleTabbar(true);"],
+                   "底部": ["好的，您需要新添加底部栏目么","toggleTabbar(true);"],
                    "底部栏": ["好的，您需要新添加底部栏目么","toggleTabbar(true);"]
                    },
                    {
-                   "添加朋友页面":["好的，您还需要添加么","addTabbarCell('朋友','friend');"],
-                   "朋友": ["好的，您还需要添加么","addTabbarCell('朋友','friend');"],
-                   "添加朋友": ["好的，您还需要添加么","addTabbarCell('朋友','friend');"]
+                   "添加朋友页面":["好的，您还需要添加么，比如个人界面","addTabbarCell('朋友','friend');"],
+                   "朋友": ["好的，您还需要添加么，比如个人界面","addTabbarCell('朋友','friend');"],
+                   "添加朋友": ["好的，您还需要添加么，比如个人界面","addTabbarCell('朋友','friend');"]
                    },
                    {
                    "添加个人页面":["好的，您还需要添加么","addTabbarCell('账号','account');"],
@@ -17,7 +18,32 @@
                    "添加账号": ["好的，您还需要添加么","addTabbarCell('账号','account');"]
                    },
                    {
-                   "不需要了": ["好的，请选择发现主页的内容",""]
+                   "不": ["好的，请选择发现主页的内容",""]
+                   },
+                   {
+                   "添加导航栏":["好的，您还需要添加么，比如菜单栏","showTab1Navbar();"],
+                   "搜索": ["好的，您还需要添加么，比如菜单栏","showTab1Navbar();"],
+                   "导航": ["好的，您还需要添加么，比如菜单栏","showTab1Navbar();"]
+                   },
+                   {
+                   "添加二级导航栏":["好的，您还需要添加么，比如大图轮播？","showTab1SecondNavbar();"],
+                   "菜单": ["好的，您还需要添加么，比如大图轮播？","showTab1SecondNavbar();"],
+                   "导航": ["好的，您还需要添加么，比如大图轮播？","showTab1SecondNavbar();"]
+                   },
+                   {
+                   "大图":["好的，您还需要添加么","showTab1BannerView();"],
+                   "轮播": ["好的，您还需要添加么","showTab1BannerView();"],
+                   "首页": ["好的，您还需要添加么","showTab1BannerView();"]
+                   },
+                   {
+                   "添加歌曲":["好的，您还有什么需求","showTab1PlayView();"],
+                   "歌曲": ["好的，您还有什么需求","showTab1PlayView();"],
+                   "播放": ["好的，您还有什么需求","showTab1PlayView();"]
+                   },
+                   {
+                   "模糊":["好的，您还有什么需求","enableTab1SecondNavbarBlur();"],
+                   "背景": ["好的，您还有什么需求","enableTab1SecondNavbarBlur();"],
+                   "菜单": ["好的，您还有什么需求","enableTab1SecondNavbarBlur();"]
                    },
                    {
                    "大些": ["好的","javascrpit"],
