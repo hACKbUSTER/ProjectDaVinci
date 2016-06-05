@@ -59,7 +59,7 @@
 
 - (void) animateBar: (UIView*) bar to: (CGFloat) targetHeight {
 	CGFloat distance = fabsf((float)(targetHeight - bar.frame.size.height));
-	CGFloat speed = 15;
+	CGFloat speed = 35;
 	[UIView animateWithDuration:(NSTimeInterval)(distance/speed) delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
 		[self setBar:bar to:targetHeight];
 		if (fabsf((float)(targetHeight - _maxHeight)) < 1) {
