@@ -12,6 +12,7 @@
 #import "DVLoadingView.h"
 #import <JavaScriptCore/JavaScriptCore.h>  
 #import "DVOrderMatchManager.h"
+#import "DVNetworkManager.h"
 
 @interface DVViewController () <WKUIDelegate,WKNavigationDelegate,UIWebViewDelegate>
 {
@@ -30,6 +31,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 请求音乐
+//    [[DVNetworkManager sharedManager] getMusicInfo:@"七里香" success:^(id object) {
+//        NSArray *result_array = [object objectForKey:@"result"];
+//        if (result_array.count > 0) {
+//            NSDictionary *music_info = result_array[0];
+//            NSString *mp3url = [music_info objectForKey:@"mp3Url"];
+//            NSString *name = [music_info objectForKey:@"name"];
+//            NSString *picurl = [[music_info objectForKey:@"album"] objectForKey:@"picUrl"];
+//            NSLog(@"Ask for music %@",name);
+    // 在这里调用js 将这三个数据传过去初始化
+//        }
+//    } failure:^(NSError *error) {
+//        
+//    }];
     
     self.customView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, -50.0f, ScreenWidth, 50.0f)];
     _customView.backgroundColor = self.view.tintColor;
@@ -141,7 +157,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    [self showCustomViewAnimated:YES withTitle:@"说句话啊"];
+//    [self showCustomViewAnimated:YES withTitle:@"说句话啊"];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     //    [self.progressView setProgress:1 animated:NO];

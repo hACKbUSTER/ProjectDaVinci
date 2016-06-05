@@ -39,7 +39,10 @@
 		5062B4BF1D02FA96000F39FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4BE1D02FA96000F39FB /* CoreGraphics.framework */; };
 		5062B4C21D02FAD9000F39FB /* DVVoiceInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */; };
 		5062B4C41D033E7F000F39FB /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5062B4C31D033E7F000F39FB /* JavaScriptCore.framework */; };
+		5062B4C71D039FBA000F39FB /* DVNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4C61D039FBA000F39FB /* DVNetworkManager.m */; };
+		5062B4CA1D03AC88000F39FB /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5062B4C91D03AC88000F39FB /* NSString+URL.m */; };
 		714E2D8B1D031E6800EB7CA0 /* DVLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 714E2D891D031E6800EB7CA0 /* DVLoadingView.m */; };
+		9AB70DD90F1D230119C875B4 /* libPods-DaVinci.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1EBCEAC2791D47A2B8EEDE /* libPods-DaVinci.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		0DB90E1C1D03704900D900C6 /* DVOrderMatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVOrderMatchManager.h; sourceTree = "<group>"; };
 		0DB90E1D1D03704900D900C6 /* DVOrderMatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVOrderMatchManager.m; sourceTree = "<group>"; };
 		0DB90E1F1D0379EB00D900C6 /* DVOrderMatchJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DVOrderMatchJSON.json; sourceTree = "<group>"; };
+		0FB6BD9404A7727D2C62F566 /* Pods-DaVinci.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinci.release.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci.release.xcconfig"; sourceTree = "<group>"; };
+		14647EDCEF717FD88633C081 /* Pods-DaVinci.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaVinci.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci.debug.xcconfig"; sourceTree = "<group>"; };
+		2A1EBCEAC2791D47A2B8EEDE /* libPods-DaVinci.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DaVinci.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5062B3FB1D02C9C6000F39FB /* DaVinci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaVinci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5062B3FF1D02C9C6000F39FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5062B4011D02C9C6000F39FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +116,10 @@
 		5062B4C01D02FAD9000F39FB /* DVVoiceInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVVoiceInputManager.h; sourceTree = "<group>"; };
 		5062B4C11D02FAD9000F39FB /* DVVoiceInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVVoiceInputManager.m; sourceTree = "<group>"; };
 		5062B4C31D033E7F000F39FB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		5062B4C51D039FBA000F39FB /* DVNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVNetworkManager.h; sourceTree = "<group>"; };
+		5062B4C61D039FBA000F39FB /* DVNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVNetworkManager.m; sourceTree = "<group>"; };
+		5062B4C81D03AC88000F39FB /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		5062B4C91D03AC88000F39FB /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
 		714E2D891D031E6800EB7CA0 /* DVLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVLoadingView.m; sourceTree = "<group>"; };
 		714E2D8A1D031E6800EB7CA0 /* DVLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVLoadingView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +142,7 @@
 				5062B4AD1D02FA5F000F39FB /* CoreLocation.framework in Frameworks */,
 				5062B4A11D02DB53000F39FB /* libz.tbd in Frameworks */,
 				5062B4AB1D02FA4D000F39FB /* iflyMSC.framework in Frameworks */,
+				9AB70DD90F1D230119C875B4 /* libPods-DaVinci.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +163,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E3DF33DC6D149868ED61A5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14647EDCEF717FD88633C081 /* Pods-DaVinci.debug.xcconfig */,
+				0FB6BD9404A7727D2C62F566 /* Pods-DaVinci.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5062B3F21D02C9C6000F39FB = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +180,7 @@
 				5062B4171D02C9C6000F39FB /* DaVinciTests */,
 				5062B4221D02C9C6000F39FB /* DaVinciUITests */,
 				5062B3FC1D02C9C6000F39FB /* Products */,
+				3E3DF33DC6D149868ED61A5E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +267,8 @@
 				0DB90E1C1D03704900D900C6 /* DVOrderMatchManager.h */,
 				0DB90E1D1D03704900D900C6 /* DVOrderMatchManager.m */,
 				0DB90E1F1D0379EB00D900C6 /* DVOrderMatchJSON.json */,
+				5062B4C51D039FBA000F39FB /* DVNetworkManager.h */,
+				5062B4C61D039FBA000F39FB /* DVNetworkManager.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -258,6 +281,8 @@
 				5062B48F1D02DB0A000F39FB /* minizip */,
 				5062B4991D02DB0A000F39FB /* ZipArchive.h */,
 				5062B49A1D02DB0A000F39FB /* ZipArchive.mm */,
+				5062B4C81D03AC88000F39FB /* NSString+URL.h */,
+				5062B4C91D03AC88000F39FB /* NSString+URL.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -294,6 +319,7 @@
 				5062B4AC1D02FA5F000F39FB /* CoreLocation.framework */,
 				5062B4AA1D02FA4D000F39FB /* iflyMSC.framework */,
 				5062B4A01D02DB53000F39FB /* libz.tbd */,
+				2A1EBCEAC2791D47A2B8EEDE /* libPods-DaVinci.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -305,9 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5062B4281D02C9C6000F39FB /* Build configuration list for PBXNativeTarget "DaVinci" */;
 			buildPhases = (
+				A5FB6FDE531A667D79B69AB9 /* Check Pods Manifest.lock */,
 				5062B3F71D02C9C6000F39FB /* Sources */,
 				5062B3F81D02C9C6000F39FB /* Frameworks */,
 				5062B3F91D02C9C6000F39FB /* Resources */,
+				CC7038ECFB0103FC8D88C92A /* Embed Pods Frameworks */,
+				EAB15AB27EEA3616D3DE7464 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -425,6 +454,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A5FB6FDE531A667D79B69AB9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC7038ECFB0103FC8D88C92A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB15AB27EEA3616D3DE7464 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DaVinci/Pods-DaVinci-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5062B3F71D02C9C6000F39FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -436,6 +513,8 @@
 				5062B4351D02D183000F39FB /* DVViewController.m in Sources */,
 				0DB90E1E1D03704900D900C6 /* DVOrderMatchManager.m in Sources */,
 				5062B49C1D02DB0A000F39FB /* mztools.c in Sources */,
+				5062B4C71D039FBA000F39FB /* DVNetworkManager.m in Sources */,
+				5062B4CA1D03AC88000F39FB /* NSString+URL.m in Sources */,
 				714E2D8B1D031E6800EB7CA0 /* DVLoadingView.m in Sources */,
 				5062B4001D02C9C6000F39FB /* main.m in Sources */,
 				5062B4C21D02FAD9000F39FB /* DVVoiceInputManager.m in Sources */,
@@ -581,6 +660,7 @@
 		};
 		5062B4291D02C9C6000F39FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14647EDCEF717FD88633C081 /* Pods-DaVinci.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -597,6 +677,7 @@
 		};
 		5062B42A1D02C9C6000F39FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB6BD9404A7727D2C62F566 /* Pods-DaVinci.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
