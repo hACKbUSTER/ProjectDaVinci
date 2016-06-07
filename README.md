@@ -1,2 +1,2 @@
 # ProjectDaVinci
-First Price of SegmentFault ✖️ AngelHack Shenzhen Hackathon
+First Prize of SegmentFault ✖️ AngelHack Shenzhen Hackathon
